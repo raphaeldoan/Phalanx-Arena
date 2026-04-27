@@ -1,0 +1,102 @@
+{
+  "providers": [
+    {
+      "name": "openai",
+      "label": "OpenAI",
+      "apiKeyEnv": "OPENAI_API_KEY",
+      "serverBaseUrl": null,
+      "browserBaseUrl": "https://api.openai.com/v1",
+      "modelPlaceholder": "gpt-5.4-mini",
+      "apiKeyPlaceholder": "sk-..."
+    },
+    {
+      "name": "anthropic",
+      "label": "Anthropic",
+      "apiKeyEnv": "ANTHROPIC_API_KEY",
+      "serverBaseUrl": null,
+      "browserBaseUrl": "https://api.anthropic.com/v1",
+      "modelPlaceholder": "claude-...",
+      "apiKeyPlaceholder": "sk-ant-..."
+    },
+    {
+      "name": "xai",
+      "label": "xAI",
+      "apiKeyEnv": "XAI_API_KEY",
+      "serverBaseUrl": "https://api.x.ai/v1",
+      "browserBaseUrl": "https://api.x.ai/v1",
+      "modelPlaceholder": "grok-...",
+      "apiKeyPlaceholder": "xai-..."
+    },
+    {
+      "name": "mistral",
+      "label": "Mistral",
+      "apiKeyEnv": "MISTRAL_API_KEY",
+      "serverBaseUrl": "https://api.mistral.ai/v1",
+      "browserBaseUrl": "https://api.mistral.ai/v1",
+      "modelPlaceholder": "mistral-...",
+      "apiKeyPlaceholder": "paste API key"
+    },
+    {
+      "name": "gemini",
+      "label": "Gemini",
+      "apiKeyEnv": "GEMINI_API_KEY",
+      "serverBaseUrl": "https://generativelanguage.googleapis.com/v1beta/openai",
+      "browserBaseUrl": "https://generativelanguage.googleapis.com/v1beta/openai",
+      "modelPlaceholder": "gemini-...",
+      "apiKeyPlaceholder": "paste API key"
+    },
+    {
+      "name": "together",
+      "label": "Together",
+      "apiKeyEnv": "TOGETHER_API_KEY",
+      "serverBaseUrl": "https://api.together.xyz/v1",
+      "browserBaseUrl": "https://api.together.xyz/v1",
+      "modelPlaceholder": "meta-llama/...",
+      "apiKeyPlaceholder": "paste API key"
+    },
+    {
+      "name": "openrouter",
+      "label": "OpenRouter",
+      "apiKeyEnv": "OPENROUTER_API_KEY",
+      "serverBaseUrl": "https://openrouter.ai/api/v1",
+      "browserBaseUrl": "https://openrouter.ai/api/v1",
+      "modelPlaceholder": "openrouter model id",
+      "apiKeyPlaceholder": "sk-or-..."
+    }
+  ],
+  "modelProviderRules": [
+    {
+      "provider": "openrouter",
+      "prefixes": ["openai/", "anthropic/", "x-ai/", "google/", "mistralai/", "deepseek/", "moonshotai/"]
+    },
+    {
+      "provider": "anthropic",
+      "prefixes": ["claude-"]
+    },
+    {
+      "provider": "xai",
+      "prefixes": ["grok-"]
+    },
+    {
+      "provider": "gemini",
+      "prefixes": ["gemini-"]
+    },
+    {
+      "provider": "mistral",
+      "prefixes": [
+        "mistral-",
+        "ministral-",
+        "magistral-",
+        "pixtral-",
+        "codestral-",
+        "devstral-",
+        "voxtral-",
+        "ministral"
+      ]
+    },
+    {
+      "provider": "together",
+      "prefixes": ["meta-llama/"]
+    }
+  ]
+}
