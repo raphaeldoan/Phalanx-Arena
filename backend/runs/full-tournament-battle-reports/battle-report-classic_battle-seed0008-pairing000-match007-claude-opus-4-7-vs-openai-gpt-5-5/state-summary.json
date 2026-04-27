@@ -1,0 +1,3397 @@
+{
+  "scenario_id": "classic_battle",
+  "seed": 8,
+  "pairing_index": 0,
+  "seed_pair_index": 1,
+  "match_index": 7,
+  "commanders": {
+    "A": {
+      "label": "Claude Opus 4.7",
+      "model": "anthropic/claude-opus-4.7"
+    },
+    "B": {
+      "label": "OpenAI GPT-5.5",
+      "model": "openai/gpt-5.5"
+    }
+  },
+  "winner": "B",
+  "winner_reason": "Army B wins: Army A is broken.",
+  "finished": true,
+  "max_actions_reached": false,
+  "action_count": 62,
+  "bound10_action_index": null,
+  "final_action_index": 62,
+  "bound10": null,
+  "final": {
+    "game_id": "efac905de82a4d8da8ead53964183162",
+    "engine_name": "Phalanx Arena",
+    "engine_version": "0.21",
+    "design_basis": "SAB-inspired square-grid ancients engine with facing-led movement, line-and-column groups, scaled attrition, structured combat details, march actions, screening fire, flee/pursuit, residual contact cleanup, lane-based frontage pairing, terrain-aware combat, interpenetration, and broader scenario support",
+    "scenario_id": "classic_battle",
+    "scenario_name": "Classic Battle",
+    "board_width": 16,
+    "board_height": 10,
+    "phase": "battle",
+    "bound_number": 8,
+    "current_player": "A",
+    "deployment_first_army": "B",
+    "first_bound_army": "B",
+    "pips_remaining": 0,
+    "last_pip_roll": 8,
+    "seed": 8,
+    "roll_index": 48,
+    "winner": "B",
+    "draw": false,
+    "terrain": [
+      {
+        "position": {
+          "x": 4,
+          "y": 6
+        },
+        "terrain": "hill"
+      },
+      {
+        "position": {
+          "x": 5,
+          "y": 6
+        },
+        "terrain": "hill"
+      },
+      {
+        "position": {
+          "x": 4,
+          "y": 7
+        },
+        "terrain": "hill"
+      },
+      {
+        "position": {
+          "x": 10,
+          "y": 6
+        },
+        "terrain": "forest"
+      },
+      {
+        "position": {
+          "x": 11,
+          "y": 6
+        },
+        "terrain": "forest"
+      },
+      {
+        "position": {
+          "x": 11,
+          "y": 7
+        },
+        "terrain": "forest"
+      },
+      {
+        "position": {
+          "x": 11,
+          "y": 2
+        },
+        "terrain": "hill"
+      },
+      {
+        "position": {
+          "x": 10,
+          "y": 3
+        },
+        "terrain": "hill"
+      },
+      {
+        "position": {
+          "x": 11,
+          "y": 3
+        },
+        "terrain": "hill"
+      },
+      {
+        "position": {
+          "x": 4,
+          "y": 2
+        },
+        "terrain": "forest"
+      },
+      {
+        "position": {
+          "x": 4,
+          "y": 3
+        },
+        "terrain": "forest"
+      },
+      {
+        "position": {
+          "x": 5,
+          "y": 3
+        },
+        "terrain": "forest"
+      }
+    ],
+    "deployment_zones": [
+      {
+        "army": "A",
+        "min_x": 0,
+        "max_x": 15,
+        "min_y": 8,
+        "max_y": 9
+      },
+      {
+        "army": "B",
+        "min_x": 0,
+        "max_x": 15,
+        "min_y": 0,
+        "max_y": 1
+      }
+    ],
+    "deployment_ready": [
+      "B",
+      "A"
+    ],
+    "attrition_status": [
+      {
+        "army": "A",
+        "starting_units": 12,
+        "losses": 4,
+        "target_losses": 4
+      },
+      {
+        "army": "B",
+        "starting_units": 12,
+        "losses": 5,
+        "target_losses": 4
+      }
+    ],
+    "battle_scores": [
+      {
+        "army": "A",
+        "enemy_losses": 16,
+        "total": 16
+      },
+      {
+        "army": "B",
+        "enemy_losses": 22,
+        "total": 22
+      }
+    ],
+    "armies": [
+      {
+        "id": "A",
+        "pips": 0,
+        "morale_loss": 22,
+        "morale_threshold": 17,
+        "shaken": true,
+        "broken": true
+      },
+      {
+        "id": "B",
+        "pips": 0,
+        "morale_loss": 16,
+        "morale_threshold": 17,
+        "shaken": false,
+        "broken": false
+      }
+    ],
+    "victory_target": 5,
+    "units": [
+      {
+        "id": "A-LH1",
+        "army": "A",
+        "name": "Tarantine Horse I",
+        "kind": "light_horse",
+        "position": {
+          "x": 2,
+          "y": 4
+        },
+        "facing": "N",
+        "leader": false,
+        "formation_class": "open_order",
+        "quality": "ordinary",
+        "in_command": false,
+        "disordered": true,
+        "can_evade": true,
+        "activated_this_bound": false,
+        "charging": false,
+        "eliminated": true,
+        "unit_class": "Cavalry",
+        "formation_state": "Rout",
+        "pursuit_class": "Normal",
+        "morale_value": 2,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": false,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "A-EL1",
+        "army": "A",
+        "name": "War Elephants I",
+        "kind": "elephants",
+        "position": {
+          "x": 3,
+          "y": 9
+        },
+        "facing": "N",
+        "leader": false,
+        "formation_class": "close_order",
+        "quality": "ordinary",
+        "in_command": false,
+        "disordered": false,
+        "can_evade": false,
+        "activated_this_bound": false,
+        "charging": false,
+        "eliminated": false,
+        "unit_class": "Elephant",
+        "formation_state": "Normal",
+        "pursuit_class": "Impetuous",
+        "morale_value": 5,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": false,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "A-PS1",
+        "army": "A",
+        "name": "Psiloi I",
+        "kind": "psiloi",
+        "position": {
+          "x": 4,
+          "y": 9
+        },
+        "facing": "N",
+        "leader": false,
+        "formation_class": "open_order",
+        "quality": "ordinary",
+        "in_command": false,
+        "disordered": false,
+        "can_evade": true,
+        "activated_this_bound": false,
+        "charging": false,
+        "eliminated": false,
+        "unit_class": "Light",
+        "formation_state": "Normal",
+        "pursuit_class": "None",
+        "morale_value": 1,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": false,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "A-SP1",
+        "army": "A",
+        "name": "Thureophoroi I",
+        "kind": "spear",
+        "position": {
+          "x": 5,
+          "y": 8
+        },
+        "facing": "N",
+        "leader": false,
+        "formation_class": "close_order",
+        "quality": "ordinary",
+        "in_command": false,
+        "disordered": false,
+        "can_evade": false,
+        "activated_this_bound": false,
+        "charging": false,
+        "eliminated": false,
+        "unit_class": "Formed",
+        "formation_state": "Normal",
+        "pursuit_class": "None",
+        "morale_value": 3,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": false,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "A-PK1",
+        "army": "A",
+        "name": "Phalangites I",
+        "kind": "pike",
+        "position": {
+          "x": 6,
+          "y": 6
+        },
+        "facing": "N",
+        "leader": false,
+        "formation_class": "close_order",
+        "quality": "ordinary",
+        "in_command": false,
+        "disordered": true,
+        "can_evade": false,
+        "activated_this_bound": false,
+        "charging": false,
+        "eliminated": true,
+        "unit_class": "Pike",
+        "formation_state": "Rout",
+        "pursuit_class": "None",
+        "morale_value": 4,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": false,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "A-PK2",
+        "army": "A",
+        "name": "Phalangites II",
+        "kind": "pike",
+        "position": {
+          "x": 7,
+          "y": 6
+        },
+        "facing": "W",
+        "leader": false,
+        "formation_class": "close_order",
+        "quality": "ordinary",
+        "in_command": false,
+        "disordered": true,
+        "can_evade": false,
+        "activated_this_bound": false,
+        "charging": false,
+        "eliminated": true,
+        "unit_class": "Pike",
+        "formation_state": "Rout",
+        "pursuit_class": "None",
+        "morale_value": 4,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": false,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "A-PK3",
+        "army": "A",
+        "name": "Phalangites III",
+        "kind": "pike",
+        "position": {
+          "x": 8,
+          "y": 6
+        },
+        "facing": "W",
+        "leader": false,
+        "formation_class": "close_order",
+        "quality": "ordinary",
+        "in_command": false,
+        "disordered": false,
+        "can_evade": false,
+        "activated_this_bound": false,
+        "charging": false,
+        "eliminated": false,
+        "unit_class": "Pike",
+        "formation_state": "OrderedPike",
+        "pursuit_class": "None",
+        "morale_value": 4,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": false,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "A-PK4",
+        "army": "A",
+        "name": "Phalangites IV",
+        "kind": "pike",
+        "position": {
+          "x": 7,
+          "y": 5
+        },
+        "facing": "W",
+        "leader": false,
+        "formation_class": "close_order",
+        "quality": "ordinary",
+        "in_command": false,
+        "disordered": false,
+        "can_evade": false,
+        "activated_this_bound": true,
+        "charging": false,
+        "eliminated": false,
+        "unit_class": "Pike",
+        "formation_state": "OrderedPike",
+        "pursuit_class": "None",
+        "morale_value": 4,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": false,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "A-SP2",
+        "army": "A",
+        "name": "Thureophoroi II",
+        "kind": "spear",
+        "position": {
+          "x": 10,
+          "y": 7
+        },
+        "facing": "E",
+        "leader": false,
+        "formation_class": "close_order",
+        "quality": "ordinary",
+        "in_command": false,
+        "disordered": false,
+        "can_evade": false,
+        "activated_this_bound": false,
+        "charging": false,
+        "eliminated": false,
+        "unit_class": "Formed",
+        "formation_state": "Normal",
+        "pursuit_class": "None",
+        "morale_value": 3,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": false,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "A-PS2",
+        "army": "A",
+        "name": "Psiloi II",
+        "kind": "psiloi",
+        "position": {
+          "x": 11,
+          "y": 9
+        },
+        "facing": "N",
+        "leader": false,
+        "formation_class": "open_order",
+        "quality": "ordinary",
+        "in_command": false,
+        "disordered": false,
+        "can_evade": true,
+        "activated_this_bound": true,
+        "charging": false,
+        "eliminated": false,
+        "unit_class": "Light",
+        "formation_state": "Normal",
+        "pursuit_class": "None",
+        "morale_value": 1,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": false,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "A-CV1",
+        "army": "A",
+        "name": "Companion Cavalry I",
+        "kind": "cavalry",
+        "position": {
+          "x": 3,
+          "y": 3
+        },
+        "facing": "E",
+        "leader": false,
+        "formation_class": "close_order",
+        "quality": "ordinary",
+        "in_command": false,
+        "disordered": false,
+        "can_evade": false,
+        "activated_this_bound": true,
+        "charging": false,
+        "eliminated": false,
+        "unit_class": "Cavalry",
+        "formation_state": "Normal",
+        "pursuit_class": "Normal",
+        "morale_value": 3,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": false,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "A-GEN",
+        "army": "A",
+        "name": "Companion Cavalry General",
+        "kind": "cavalry",
+        "position": {
+          "x": 12,
+          "y": 6
+        },
+        "facing": "N",
+        "leader": true,
+        "formation_class": "close_order",
+        "quality": "superior",
+        "in_command": false,
+        "disordered": true,
+        "can_evade": false,
+        "activated_this_bound": false,
+        "charging": false,
+        "eliminated": true,
+        "unit_class": "Leader",
+        "formation_state": "Rout",
+        "pursuit_class": "None",
+        "morale_value": 8,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": true,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "B-LH1",
+        "army": "B",
+        "name": "Tarantine Horse I",
+        "kind": "light_horse",
+        "position": {
+          "x": 13,
+          "y": 4
+        },
+        "facing": "S",
+        "leader": false,
+        "formation_class": "open_order",
+        "quality": "ordinary",
+        "in_command": true,
+        "disordered": false,
+        "can_evade": true,
+        "activated_this_bound": false,
+        "charging": false,
+        "eliminated": false,
+        "unit_class": "Cavalry",
+        "formation_state": "Normal",
+        "pursuit_class": "Normal",
+        "morale_value": 2,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": false,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "B-EL1",
+        "army": "B",
+        "name": "War Elephants I",
+        "kind": "elephants",
+        "position": {
+          "x": 13,
+          "y": 3
+        },
+        "facing": "N",
+        "leader": false,
+        "formation_class": "close_order",
+        "quality": "ordinary",
+        "in_command": true,
+        "disordered": true,
+        "can_evade": false,
+        "activated_this_bound": false,
+        "charging": false,
+        "eliminated": false,
+        "unit_class": "Elephant",
+        "formation_state": "Normal",
+        "pursuit_class": "Impetuous",
+        "morale_value": 5,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 2,
+        "panic_turns_remaining": 0,
+        "army_general": false,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "B-PS1",
+        "army": "B",
+        "name": "Psiloi I",
+        "kind": "psiloi",
+        "position": {
+          "x": 13,
+          "y": 7
+        },
+        "facing": "W",
+        "leader": false,
+        "formation_class": "open_order",
+        "quality": "ordinary",
+        "in_command": false,
+        "disordered": true,
+        "can_evade": true,
+        "activated_this_bound": false,
+        "charging": false,
+        "eliminated": true,
+        "unit_class": "Light",
+        "formation_state": "Rout",
+        "pursuit_class": "None",
+        "morale_value": 1,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": false,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "B-SP1",
+        "army": "B",
+        "name": "Thureophoroi I",
+        "kind": "spear",
+        "position": {
+          "x": 9,
+          "y": 5
+        },
+        "facing": "S",
+        "leader": false,
+        "formation_class": "close_order",
+        "quality": "ordinary",
+        "in_command": false,
+        "disordered": true,
+        "can_evade": false,
+        "activated_this_bound": false,
+        "charging": false,
+        "eliminated": true,
+        "unit_class": "Formed",
+        "formation_state": "Rout",
+        "pursuit_class": "None",
+        "morale_value": 3,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": false,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "B-PK1",
+        "army": "B",
+        "name": "Phalangites I",
+        "kind": "pike",
+        "position": {
+          "x": 9,
+          "y": 6
+        },
+        "facing": "S",
+        "leader": false,
+        "formation_class": "close_order",
+        "quality": "ordinary",
+        "in_command": false,
+        "disordered": true,
+        "can_evade": false,
+        "activated_this_bound": false,
+        "charging": false,
+        "eliminated": true,
+        "unit_class": "Pike",
+        "formation_state": "Rout",
+        "pursuit_class": "None",
+        "morale_value": 4,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": false,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "B-PK2",
+        "army": "B",
+        "name": "Phalangites II",
+        "kind": "pike",
+        "position": {
+          "x": 8,
+          "y": 6
+        },
+        "facing": "S",
+        "leader": false,
+        "formation_class": "close_order",
+        "quality": "ordinary",
+        "in_command": false,
+        "disordered": true,
+        "can_evade": false,
+        "activated_this_bound": false,
+        "charging": false,
+        "eliminated": true,
+        "unit_class": "Pike",
+        "formation_state": "Rout",
+        "pursuit_class": "None",
+        "morale_value": 4,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": false,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "B-PK3",
+        "army": "B",
+        "name": "Phalangites III",
+        "kind": "pike",
+        "position": {
+          "x": 7,
+          "y": 5
+        },
+        "facing": "E",
+        "leader": false,
+        "formation_class": "close_order",
+        "quality": "ordinary",
+        "in_command": false,
+        "disordered": true,
+        "can_evade": false,
+        "activated_this_bound": false,
+        "charging": false,
+        "eliminated": true,
+        "unit_class": "Pike",
+        "formation_state": "Rout",
+        "pursuit_class": "None",
+        "morale_value": 4,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": false,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "B-PK4",
+        "army": "B",
+        "name": "Phalangites IV",
+        "kind": "pike",
+        "position": {
+          "x": 7,
+          "y": 6
+        },
+        "facing": "E",
+        "leader": false,
+        "formation_class": "close_order",
+        "quality": "ordinary",
+        "in_command": true,
+        "disordered": false,
+        "can_evade": false,
+        "activated_this_bound": false,
+        "charging": false,
+        "eliminated": false,
+        "unit_class": "Pike",
+        "formation_state": "OrderedPike",
+        "pursuit_class": "None",
+        "morale_value": 4,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": false,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "B-SP2",
+        "army": "B",
+        "name": "Thureophoroi II",
+        "kind": "spear",
+        "position": {
+          "x": 5,
+          "y": 1
+        },
+        "facing": "S",
+        "leader": false,
+        "formation_class": "close_order",
+        "quality": "ordinary",
+        "in_command": true,
+        "disordered": false,
+        "can_evade": false,
+        "activated_this_bound": false,
+        "charging": false,
+        "eliminated": false,
+        "unit_class": "Formed",
+        "formation_state": "Normal",
+        "pursuit_class": "None",
+        "morale_value": 3,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": false,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "B-PS2",
+        "army": "B",
+        "name": "Psiloi II",
+        "kind": "psiloi",
+        "position": {
+          "x": 4,
+          "y": 3
+        },
+        "facing": "W",
+        "leader": false,
+        "formation_class": "open_order",
+        "quality": "ordinary",
+        "in_command": true,
+        "disordered": false,
+        "can_evade": true,
+        "activated_this_bound": false,
+        "charging": false,
+        "eliminated": false,
+        "unit_class": "Light",
+        "formation_state": "Normal",
+        "pursuit_class": "None",
+        "morale_value": 1,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": false,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "B-CV1",
+        "army": "B",
+        "name": "Companion Cavalry I",
+        "kind": "cavalry",
+        "position": {
+          "x": 7,
+          "y": 0
+        },
+        "facing": "S",
+        "leader": false,
+        "formation_class": "close_order",
+        "quality": "ordinary",
+        "in_command": true,
+        "disordered": false,
+        "can_evade": false,
+        "activated_this_bound": false,
+        "charging": false,
+        "eliminated": false,
+        "unit_class": "Cavalry",
+        "formation_state": "Normal",
+        "pursuit_class": "Normal",
+        "morale_value": 3,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": false,
+        "deployed": true,
+        "off_map": false
+      },
+      {
+        "id": "B-GEN",
+        "army": "B",
+        "name": "Companion Cavalry General",
+        "kind": "cavalry",
+        "position": {
+          "x": 8,
+          "y": 0
+        },
+        "facing": "S",
+        "leader": true,
+        "formation_class": "close_order",
+        "quality": "superior",
+        "in_command": true,
+        "disordered": false,
+        "can_evade": false,
+        "activated_this_bound": false,
+        "charging": false,
+        "eliminated": false,
+        "unit_class": "Leader",
+        "formation_state": "Normal",
+        "pursuit_class": "None",
+        "morale_value": 8,
+        "has_routed_before": false,
+        "overpursuit_turns_remaining": 0,
+        "panic_turns_remaining": 0,
+        "army_general": true,
+        "deployed": true,
+        "off_map": false
+      }
+    ],
+    "log": [
+      {
+        "step": 0,
+        "message": "B deployment phase begins."
+      },
+      {
+        "step": 2,
+        "message": "B Tarantine Horse I deployed from (13, 1) to (13, 1)."
+      },
+      {
+        "step": 3,
+        "message": "B War Elephants I deployed from (12, 1) to (12, 1)."
+      },
+      {
+        "step": 4,
+        "message": "B Psiloi I deployed from (11, 1) to (11, 1)."
+      },
+      {
+        "step": 5,
+        "message": "B Thureophoroi I deployed from (10, 1) to (10, 1)."
+      },
+      {
+        "step": 6,
+        "message": "B Phalangites I deployed from (9, 1) to (9, 1)."
+      },
+      {
+        "step": 7,
+        "message": "B Phalangites II deployed from (8, 1) to (8, 1)."
+      },
+      {
+        "step": 8,
+        "message": "B Phalangites III deployed from (7, 1) to (7, 1)."
+      },
+      {
+        "step": 9,
+        "message": "B Phalangites IV deployed from (6, 1) to (6, 1)."
+      },
+      {
+        "step": 10,
+        "message": "B Thureophoroi II deployed from (5, 1) to (5, 1)."
+      },
+      {
+        "step": 11,
+        "message": "B Psiloi II deployed from (4, 1) to (4, 1)."
+      },
+      {
+        "step": 12,
+        "message": "B Companion Cavalry General deployed from (3, 0) to (8, 0)."
+      },
+      {
+        "step": 13,
+        "message": "B Companion Cavalry I deployed from (12, 0) to (7, 0)."
+      },
+      {
+        "step": 14,
+        "message": "B finalized deployment."
+      },
+      {
+        "step": 15,
+        "message": "A deployment phase begins."
+      },
+      {
+        "step": 16,
+        "message": "A Companion Cavalry I deployed from (3, 9) to (1, 9)."
+      },
+      {
+        "step": 17,
+        "message": "A Tarantine Horse I deployed from (2, 8) to (2, 9)."
+      },
+      {
+        "step": 18,
+        "message": "A War Elephants I deployed from (3, 8) to (3, 9)."
+      },
+      {
+        "step": 19,
+        "message": "A Psiloi I deployed from (4, 8) to (4, 9)."
+      },
+      {
+        "step": 20,
+        "message": "A Thureophoroi I deployed from (5, 8) to (5, 8)."
+      },
+      {
+        "step": 21,
+        "message": "A Phalangites I deployed from (6, 8) to (6, 8)."
+      },
+      {
+        "step": 22,
+        "message": "A Phalangites II deployed from (7, 8) to (7, 8)."
+      },
+      {
+        "step": 23,
+        "message": "A Phalangites III deployed from (8, 8) to (8, 8)."
+      },
+      {
+        "step": 24,
+        "message": "A Phalangites IV deployed from (9, 8) to (9, 8)."
+      },
+      {
+        "step": 25,
+        "message": "A Thureophoroi II deployed from (10, 8) to (10, 8)."
+      },
+      {
+        "step": 26,
+        "message": "A Psiloi II deployed from (11, 8) to (11, 9)."
+      },
+      {
+        "step": 27,
+        "message": "A Companion Cavalry General deployed from (12, 9) to (12, 9)."
+      },
+      {
+        "step": 28,
+        "message": "A finalized deployment."
+      },
+      {
+        "step": 29,
+        "message": "Battle begins. B starts bound 1 with 8 PIPs."
+      },
+      {
+        "step": 30,
+        "message": "B group moved B-PK4, B-PK3, B-PK2, B-PK1, B-SP1, B-PS1 for 2 PIPs."
+      },
+      {
+        "step": 31,
+        "message": "B group moved B-EL1, B-LH1 for 2 PIPs."
+      },
+      {
+        "step": 32,
+        "message": "B Psiloi II moved from (4, 1) facing S to (4, 3) facing S via (4, 2) -> (4, 3)."
+      },
+      {
+        "step": 33,
+        "message": "B ended the bound."
+      },
+      {
+        "step": 34,
+        "message": "No close combats were in contact at bound end."
+      },
+      {
+        "step": 35,
+        "message": "A begins bound 2 with 8 PIPs."
+      },
+      {
+        "step": 36,
+        "message": "A Tarantine Horse I marched from (2, 9) to (2, 4) via (2, 8) -> (2, 7) -> (2, 6) -> (2, 5) -> (2, 4)."
+      },
+      {
+        "step": 37,
+        "message": "A Companion Cavalry I marched from (1, 9) to (1, 4) via (1, 8) -> (1, 7) -> (1, 6) -> (1, 5) -> (1, 4)."
+      },
+      {
+        "step": 38,
+        "message": "A group moved A-PS2, A-GEN for 2 PIPs."
+      },
+      {
+        "step": 39,
+        "message": "A War Elephants I is out of command."
+      },
+      {
+        "step": 40,
+        "message": "A Psiloi I is out of command."
+      },
+      {
+        "step": 41,
+        "message": "A ended the bound."
+      },
+      {
+        "step": 42,
+        "message": "No close combats were in contact at bound end."
+      },
+      {
+        "step": 43,
+        "message": "B begins bound 3 with 8 PIPs."
+      },
+      {
+        "step": 44,
+        "message": "B Psiloi I charged from (11, 3) to (11, 5) against A-PS2 (front) via (11, 4) -> (11, 5)."
+      },
+      {
+        "step": 45,
+        "message": "A Psiloi II evaded from (11, 6) to (11, 8) via (11, 7) -> (11, 8) and became disordered."
+      },
+      {
+        "step": 46,
+        "message": "B War Elephants I charged from (12, 4) to (12, 5) against A-GEN (front) via (12, 5)."
+      },
+      {
+        "step": 47,
+        "message": "B War Elephants I is charging and will add impact in the next close combat resolution."
+      },
+      {
+        "step": 48,
+        "message": "B group moved B-PK4, B-PK3, B-PK2, B-PK1 for 1 PIPs."
+      },
+      {
+        "step": 49,
+        "message": "B Thureophoroi I moved from (10, 3) facing S to (10, 5) facing S via (10, 4) -> (10, 5)."
+      },
+      {
+        "step": 50,
+        "message": "B Psiloi II prepared missile fire at A Tarantine Horse I; it will resolve at end_bound."
+      },
+      {
+        "step": 51,
+        "message": "B ended the bound."
+      },
+      {
+        "step": 52,
+        "message": "B resolved 1 prepared missile shot."
+      },
+      {
+        "step": 53,
+        "message": "B Psiloi II shot at A Tarantine Horse I (2 vs 6)."
+      },
+      {
+        "step": 54,
+        "message": "The missiles caused no significant effect."
+      },
+      {
+        "step": 55,
+        "message": "Missile result: Psiloi II vs Tarantine Horse I at range 1 -> no_effect (2 vs 6)."
+      },
+      {
+        "step": 56,
+        "message": "Frontage lane 12 matched B War Elephants I against A Companion Cavalry General."
+      },
+      {
+        "step": 57,
+        "message": "B War Elephants I engaged A Companion Cavalry General from the front (11 vs 5)."
+      },
+      {
+        "step": 58,
+        "message": "Modifiers: B  [free flank support +1]; A  [quality +1, general aura +1, outflanked on the line -1]."
+      },
+      {
+        "step": 59,
+        "message": "A Companion Cavalry General was destroyed in close combat."
+      },
+      {
+        "step": 60,
+        "message": "A Companion Cavalry General, the general, has fallen."
+      },
+      {
+        "step": 61,
+        "message": "A morale loss +12 for Companion Cavalry General (unit lost), now 12/17."
+      },
+      {
+        "step": 62,
+        "message": "A Thureophoroi I is out of command."
+      },
+      {
+        "step": 63,
+        "message": "A Phalangites I is out of command."
+      },
+      {
+        "step": 64,
+        "message": "A Phalangites II is out of command."
+      },
+      {
+        "step": 65,
+        "message": "A Phalangites III is out of command."
+      },
+      {
+        "step": 66,
+        "message": "A Phalangites IV is out of command."
+      },
+      {
+        "step": 67,
+        "message": "A Thureophoroi II is out of command."
+      },
+      {
+        "step": 68,
+        "message": "A Psiloi II is out of command."
+      },
+      {
+        "step": 69,
+        "message": "B War Elephants I entered Overpursuit after War Elephants I routed/destroyed Companion Cavalry General (score -1)."
+      },
+      {
+        "step": 70,
+        "message": "B War Elephants I overpursued from (12, 5) to (12, 6) via (12, 6)."
+      },
+      {
+        "step": 71,
+        "message": "Close combat result: War Elephants I beat Companion Cavalry General from the front -> destroy (11 vs 5)."
+      },
+      {
+        "step": 72,
+        "message": "A Psiloi II rallied and restored good order."
+      },
+      {
+        "step": 73,
+        "message": "B War Elephants I is out of command."
+      },
+      {
+        "step": 74,
+        "message": "A begins bound 4 with 8 PIPs."
+      },
+      {
+        "step": 75,
+        "message": "A Phalangites I charged from (6, 8) to (6, 6) against B-PK4 (front) via (6, 7) -> (6, 6)."
+      },
+      {
+        "step": 76,
+        "message": "A Phalangites I is charging and will add impact in the next close combat resolution."
+      },
+      {
+        "step": 77,
+        "message": "A Phalangites II charged from (7, 8) to (7, 6) against B-PK3 (front) via (7, 7) -> (7, 6)."
+      },
+      {
+        "step": 78,
+        "message": "A Phalangites II is charging and will add impact in the next close combat resolution."
+      },
+      {
+        "step": 79,
+        "message": "A Psiloi II prepared missile fire at B War Elephants I; it will resolve at end_bound."
+      },
+      {
+        "step": 80,
+        "message": "A ended the bound."
+      },
+      {
+        "step": 81,
+        "message": "A resolved 1 prepared missile shot."
+      },
+      {
+        "step": 82,
+        "message": "A Psiloi II shot at B War Elephants I (8 vs 7)."
+      },
+      {
+        "step": 83,
+        "message": "B War Elephants I recoiled from (12, 6) to (13, 5)."
+      },
+      {
+        "step": 84,
+        "message": "B War Elephants I became disordered."
+      },
+      {
+        "step": 85,
+        "message": "B War Elephants I panicked from DisplacedThroughFriends with score -2."
+      },
+      {
+        "step": 86,
+        "message": "B War Elephants I panicked from (13, 5) to (13, 3) via (13, 4) -> (13, 3)."
+      },
+      {
+        "step": 87,
+        "message": "B Tarantine Horse I was disordered by panicking War Elephants I."
+      },
+      {
+        "step": 88,
+        "message": "Missile result: Psiloi II vs War Elephants I at range 2 -> recoil (8 vs 7)."
+      },
+      {
+        "step": 89,
+        "message": "Frontage lane 6 matched A Phalangites I against B Phalangites IV."
+      },
+      {
+        "step": 90,
+        "message": "A Phalangites I engaged B Phalangites IV from the front (13 vs 11)."
+      },
+      {
+        "step": 91,
+        "message": "Modifiers: A  [ordered pike frontal attack +3]; B  [ordered pike frontal defense +4]."
+      },
+      {
+        "step": 92,
+        "message": "B Phalangites IV stood firm despite losing the exchange; units remain in combat while still in contact."
+      },
+      {
+        "step": 93,
+        "message": "Close combat result: Phalangites I beat Phalangites IV from the front -> no_effect (13 vs 11)."
+      },
+      {
+        "step": 94,
+        "message": "Frontage lane 7 matched A Phalangites II against B Phalangites III."
+      },
+      {
+        "step": 95,
+        "message": "A Phalangites II engaged B Phalangites III from the front (11 vs 13)."
+      },
+      {
+        "step": 96,
+        "message": "Modifiers: A  [ordered pike frontal attack +3, outflanked on the line -1]; B  [free flank support +1, ordered pike frontal defense +4]."
+      },
+      {
+        "step": 97,
+        "message": "A Phalangites II stood firm despite losing the exchange; units remain in combat while still in contact."
+      },
+      {
+        "step": 98,
+        "message": "Close combat result: Phalangites III beat Phalangites II from the front -> no_effect (11 vs 13)."
+      },
+      {
+        "step": 99,
+        "message": "B War Elephants I recovered from panic but remains disordered."
+      },
+      {
+        "step": 100,
+        "message": "B Tarantine Horse I rallied and restored good order."
+      },
+      {
+        "step": 101,
+        "message": "B War Elephants I is back in command."
+      },
+      {
+        "step": 102,
+        "message": "B begins bound 5 with 8 PIPs."
+      },
+      {
+        "step": 103,
+        "message": "B Phalangites II charged from (8, 5) to (8, 6) against A-PK2 (side) via (8, 6)."
+      },
+      {
+        "step": 104,
+        "message": "A Phalangites II became DisorderedPike (flank or rear contact)."
+      },
+      {
+        "step": 105,
+        "message": "B Phalangites II is charging and will add impact in the next close combat resolution."
+      },
+      {
+        "step": 106,
+        "message": "B Phalangites I charged from (9, 5) to (9, 7) against A-PK4 (front) via (9, 6) -> (9, 7)."
+      },
+      {
+        "step": 107,
+        "message": "B Phalangites I is charging and will add impact in the next close combat resolution."
+      },
+      {
+        "step": 108,
+        "message": "B Psiloi I charged from (11, 5) to (11, 7) against A-PS2 (front) via (11, 6) -> (11, 7)."
+      },
+      {
+        "step": 109,
+        "message": "B Psiloi I is charging and will add impact in the next close combat resolution."
+      },
+      {
+        "step": 110,
+        "message": "B Psiloi I is out of command."
+      },
+      {
+        "step": 111,
+        "message": "B Psiloi II prepared missile fire at A Tarantine Horse I; it will resolve at end_bound."
+      },
+      {
+        "step": 112,
+        "message": "B ended the bound."
+      },
+      {
+        "step": 113,
+        "message": "B resolved 1 prepared missile shot."
+      },
+      {
+        "step": 114,
+        "message": "B Psiloi II shot at A Tarantine Horse I (6 vs 8)."
+      },
+      {
+        "step": 115,
+        "message": "The missiles caused no significant effect."
+      },
+      {
+        "step": 116,
+        "message": "Missile result: Psiloi II vs Tarantine Horse I at range 1 -> no_effect (6 vs 8)."
+      },
+      {
+        "step": 117,
+        "message": "Frontage lane 6 matched B Phalangites IV against A Phalangites I."
+      },
+      {
+        "step": 118,
+        "message": "B Phalangites IV engaged A Phalangites I from the front (13 vs 14)."
+      },
+      {
+        "step": 119,
+        "message": "Modifiers: B  [ordered pike frontal defense +4]; A  [ordered pike frontal defense +4]."
+      },
+      {
+        "step": 120,
+        "message": "B Phalangites IV stood firm despite losing the exchange; units remain in combat while still in contact."
+      },
+      {
+        "step": 121,
+        "message": "Close combat result: Phalangites I beat Phalangites IV from the front -> no_effect (13 vs 14)."
+      },
+      {
+        "step": 122,
+        "message": "Frontage lane 7 matched B Phalangites III against A Phalangites II."
+      },
+      {
+        "step": 123,
+        "message": "B Phalangites III engaged A Phalangites II from the front (9 vs 7)."
+      },
+      {
+        "step": 124,
+        "message": "Modifiers: B  [ordered pike frontal defense +4]; A  [disordered pike -2, extra side contact -1]."
+      },
+      {
+        "step": 125,
+        "message": "A Phalangites II recoiled from (7, 6) to (7, 7)."
+      },
+      {
+        "step": 126,
+        "message": "B Phalangites III pursued from (7, 5) to (7, 6) via (7, 6)."
+      },
+      {
+        "step": 127,
+        "message": "Close combat result: Phalangites III beat Phalangites II from the front -> recoil (9 vs 7)."
+      },
+      {
+        "step": 128,
+        "message": "Frontage lane 9 matched B Phalangites I against A Phalangites IV."
+      },
+      {
+        "step": 129,
+        "message": "B Phalangites I engaged A Phalangites IV from the front (10 vs 15)."
+      },
+      {
+        "step": 130,
+        "message": "Modifiers: B  [ordered pike frontal attack +3, outflanked on the line -2]; A  [free flank support +2, ordered pike frontal defense +4]."
+      },
+      {
+        "step": 131,
+        "message": "B Phalangites I recoiled from (9, 7) to (9, 6)."
+      },
+      {
+        "step": 132,
+        "message": "B Phalangites I became disordered."
+      },
+      {
+        "step": 133,
+        "message": "A Phalangites IV pursued from (9, 8) to (9, 7) via (9, 7)."
+      },
+      {
+        "step": 134,
+        "message": "Close combat result: Phalangites IV beat Phalangites I from the front -> recoil (10 vs 15)."
+      },
+      {
+        "step": 135,
+        "message": "Frontage lane 11 matched B Psiloi I against A Psiloi II."
+      },
+      {
+        "step": 136,
+        "message": "B Psiloi I engaged A Psiloi II from the front (8 vs 6)."
+      },
+      {
+        "step": 137,
+        "message": "Modifiers: B  [terrain +1, outflanked on the line -1]; A  [free flank support +1]."
+      },
+      {
+        "step": 138,
+        "message": "A Psiloi II recoiled from (11, 8) to (11, 9)."
+      },
+      {
+        "step": 139,
+        "message": "A Psiloi II became disordered."
+      },
+      {
+        "step": 140,
+        "message": "Close combat result: Psiloi I beat Psiloi II from the front -> recoil (8 vs 6)."
+      },
+      {
+        "step": 141,
+        "message": "A Psiloi II rallied and restored good order."
+      },
+      {
+        "step": 142,
+        "message": "A begins bound 6 with 8 PIPs."
+      },
+      {
+        "step": 143,
+        "message": "A Phalangites III charged from (8, 8) to (8, 7) against B-PK2 (side) via (8, 7)."
+      },
+      {
+        "step": 144,
+        "message": "B Phalangites II became DisorderedPike (flank or rear contact)."
+      },
+      {
+        "step": 145,
+        "message": "B Phalangites II conformed from W to S to meet the charge."
+      },
+      {
+        "step": 146,
+        "message": "A Phalangites III is charging and will add impact in the next close combat resolution."
+      },
+      {
+        "step": 147,
+        "message": "A Phalangites I became DisorderedPike (flank or rear contact)."
+      },
+      {
+        "step": 148,
+        "message": "B Phalangites III became DisorderedPike (flank or rear contact)."
+      },
+      {
+        "step": 149,
+        "message": "A Thureophoroi II charged from (10, 8) to (10, 7) against B-PS1 (side) via (10, 7)."
+      },
+      {
+        "step": 150,
+        "message": "B Psiloi I conformed from S to W to meet the charge."
+      },
+      {
+        "step": 151,
+        "message": "A Thureophoroi II is charging and will add impact in the next close combat resolution."
+      },
+      {
+        "step": 152,
+        "message": "A Psiloi II prepared missile fire at B Psiloi I; it will resolve at end_bound."
+      },
+      {
+        "step": 153,
+        "message": "A ended the bound."
+      },
+      {
+        "step": 154,
+        "message": "A resolved 1 prepared missile shot."
+      },
+      {
+        "step": 155,
+        "message": "A Psiloi II shot at B Psiloi I (5 vs 5)."
+      },
+      {
+        "step": 156,
+        "message": "The missiles caused no significant effect."
+      },
+      {
+        "step": 157,
+        "message": "Missile result: Psiloi II vs Psiloi I at range 2 -> no_effect (5 vs 5)."
+      },
+      {
+        "step": 158,
+        "message": "Frontage lane 6 matched A Phalangites I against B Phalangites IV."
+      },
+      {
+        "step": 159,
+        "message": "A Phalangites I engaged B Phalangites IV from the front (5 vs 12)."
+      },
+      {
+        "step": 160,
+        "message": "Modifiers: A  [disordered pike -2, extra side contact -1]; B  [ordered pike frontal defense +4]."
+      },
+      {
+        "step": 161,
+        "message": "A Phalangites I was destroyed in close combat."
+      },
+      {
+        "step": 162,
+        "message": "A morale loss +4 for Phalangites I (unit lost), now 16/17."
+      },
+      {
+        "step": 163,
+        "message": "B Phalangites IV advanced from (6, 5) to (6, 6)."
+      },
+      {
+        "step": 164,
+        "message": "Close combat result: Phalangites IV beat Phalangites I from the front -> destroy (5 vs 12)."
+      },
+      {
+        "step": 165,
+        "message": "Frontage lane 7 matched A Phalangites II against B Phalangites III."
+      },
+      {
+        "step": 166,
+        "message": "A Phalangites II engaged B Phalangites III from the front (6 vs 2)."
+      },
+      {
+        "step": 167,
+        "message": "Modifiers: A  [disordered pike -2]; B  [disordered pike -2, extra side contact -1]."
+      },
+      {
+        "step": 168,
+        "message": "B Phalangites III fled from (7, 6) to (7, 4) via (7, 5) -> (7, 4)."
+      },
+      {
+        "step": 169,
+        "message": "A Phalangites II pursued from (7, 7) to (7, 6) via (7, 6)."
+      },
+      {
+        "step": 170,
+        "message": "Close combat result: Phalangites II beat Phalangites III from the front -> flee (6 vs 2)."
+      },
+      {
+        "step": 171,
+        "message": "Frontage lane 8 matched A Phalangites III against B Phalangites II."
+      },
+      {
+        "step": 172,
+        "message": "A Phalangites III engaged B Phalangites II from the front (12 vs 5)."
+      },
+      {
+        "step": 173,
+        "message": "Modifiers: A  [ordered pike frontal attack +3]; B  [disordered pike -2]."
+      },
+      {
+        "step": 174,
+        "message": "B Phalangites II was destroyed in close combat."
+      },
+      {
+        "step": 175,
+        "message": "B morale loss +4 for Phalangites II (unit lost), now 4/17."
+      },
+      {
+        "step": 176,
+        "message": "A Phalangites III advanced from (8, 7) to (8, 6)."
+      },
+      {
+        "step": 177,
+        "message": "Close combat result: Phalangites III beat Phalangites II from the front -> destroy (12 vs 5)."
+      },
+      {
+        "step": 178,
+        "message": "Frontage lane 9 matched A Phalangites IV against B Phalangites I."
+      },
+      {
+        "step": 179,
+        "message": "A Phalangites IV engaged B Phalangites I from the front (12 vs 6)."
+      },
+      {
+        "step": 180,
+        "message": "Modifiers: A  [ordered pike frontal defense +4]; B  [disordered pike -2]."
+      },
+      {
+        "step": 181,
+        "message": "B Phalangites I was destroyed in close combat."
+      },
+      {
+        "step": 182,
+        "message": "B morale loss +4 for Phalangites I (unit lost), now 8/17."
+      },
+      {
+        "step": 183,
+        "message": "A Phalangites IV advanced from (9, 7) to (9, 6)."
+      },
+      {
+        "step": 184,
+        "message": "Close combat result: Phalangites IV beat Phalangites I from the front -> destroy (12 vs 6)."
+      },
+      {
+        "step": 185,
+        "message": "Frontage lane 7 matched A Thureophoroi II against B Psiloi I."
+      },
+      {
+        "step": 186,
+        "message": "A Thureophoroi II engaged B Psiloi I from the front (9 vs 4)."
+      },
+      {
+        "step": 187,
+        "message": "Modifiers: A  [charge impact +1]; B  [terrain +1]."
+      },
+      {
+        "step": 188,
+        "message": "B Psiloi I became disordered."
+      },
+      {
+        "step": 189,
+        "message": "B Psiloi I fled from (11, 7) to (13, 7) via (12, 7) -> (13, 7)."
+      },
+      {
+        "step": 190,
+        "message": "Close combat result: Thureophoroi II beat Psiloi I from the front -> flee (9 vs 4)."
+      },
+      {
+        "step": 191,
+        "message": "A Phalangites II turned from N to W to face lingering contact."
+      },
+      {
+        "step": 192,
+        "message": "B Phalangites IV turned from S to E to face lingering contact."
+      },
+      {
+        "step": 193,
+        "message": "B Psiloi I rallied and restored good order."
+      },
+      {
+        "step": 194,
+        "message": "B begins bound 7 with 8 PIPs."
+      },
+      {
+        "step": 195,
+        "message": "B Phalangites III charged from (7, 4) to (7, 5) against A-PK2 (side) via (7, 5)."
+      },
+      {
+        "step": 196,
+        "message": "B Phalangites III is charging and will add impact in the next close combat resolution."
+      },
+      {
+        "step": 197,
+        "message": "B Thureophoroi I charged from (10, 5) to (9, 5) against A-PK4 (front) via (9, 5)."
+      },
+      {
+        "step": 198,
+        "message": "B Thureophoroi I is charging and will add impact in the next close combat resolution."
+      },
+      {
+        "step": 199,
+        "message": "B Psiloi II prepared missile fire at A Tarantine Horse I; it will resolve at end_bound."
+      },
+      {
+        "step": 200,
+        "message": "B Psiloi I prepared missile fire at A Psiloi II; it will resolve at end_bound."
+      },
+      {
+        "step": 201,
+        "message": "B ended the bound."
+      },
+      {
+        "step": 202,
+        "message": "B resolved 2 prepared missile shots."
+      },
+      {
+        "step": 203,
+        "message": "B Psiloi II shot at A Tarantine Horse I (6 vs 4)."
+      },
+      {
+        "step": 204,
+        "message": "A Tarantine Horse I was destroyed by missile fire."
+      },
+      {
+        "step": 205,
+        "message": "A morale loss +2 for Tarantine Horse I (unit lost), now 18/17."
+      },
+      {
+        "step": 206,
+        "message": "Missile result: Psiloi II vs Tarantine Horse I at range 1 -> destroy (6 vs 4)."
+      },
+      {
+        "step": 207,
+        "message": "B Psiloi I shot at A Psiloi II (6 vs 7)."
+      },
+      {
+        "step": 208,
+        "message": "The missiles caused no significant effect."
+      },
+      {
+        "step": 209,
+        "message": "Missile result: Psiloi I vs Psiloi II at range 2 -> no_effect (6 vs 7)."
+      },
+      {
+        "step": 210,
+        "message": "Frontage lane 6 matched B Phalangites IV against A Phalangites II."
+      },
+      {
+        "step": 211,
+        "message": "B Phalangites IV engaged A Phalangites II from the front (11 vs 3)."
+      },
+      {
+        "step": 212,
+        "message": "Modifiers: B  [ordered pike frontal defense +4]; A  [disordered pike -2, extra side contact -1]."
+      },
+      {
+        "step": 213,
+        "message": "A Phalangites II was destroyed in close combat."
+      },
+      {
+        "step": 214,
+        "message": "A morale loss +4 for Phalangites II (unit lost), now 22/17."
+      },
+      {
+        "step": 215,
+        "message": "B Phalangites IV advanced from (6, 6) to (7, 6)."
+      },
+      {
+        "step": 216,
+        "message": "Close combat result: Phalangites IV beat Phalangites II from the front -> destroy (11 vs 3)."
+      },
+      {
+        "step": 217,
+        "message": "Frontage lane 9 matched B Thureophoroi I against A Phalangites IV."
+      },
+      {
+        "step": 218,
+        "message": "B Thureophoroi I engaged A Phalangites IV from the front (8 vs 15)."
+      },
+      {
+        "step": 219,
+        "message": "Modifiers: B  [charge impact +1, outflanked on the line -1]; A  [free flank support +1, ordered pike frontal defense +4]."
+      },
+      {
+        "step": 220,
+        "message": "B Thureophoroi I was destroyed in close combat."
+      },
+      {
+        "step": 221,
+        "message": "B morale loss +3 for Thureophoroi I (unit lost), now 11/17."
+      },
+      {
+        "step": 222,
+        "message": "A Phalangites IV advanced from (9, 6) to (9, 5)."
+      },
+      {
+        "step": 223,
+        "message": "Close combat result: Phalangites IV beat Thureophoroi I from the front -> destroy (8 vs 15)."
+      },
+      {
+        "step": 224,
+        "message": "A is shaken at 22/17 morale loss."
+      },
+      {
+        "step": 225,
+        "message": "A Phalangites III turned from N to W to face lingering contact."
+      },
+      {
+        "step": 226,
+        "message": "A begins bound 8 with 8 PIPs."
+      },
+      {
+        "step": 227,
+        "message": "A Phalangites IV charged from (9, 5) to (8, 5) against B-PK3 (side) via (8, 5)."
+      },
+      {
+        "step": 228,
+        "message": "B Phalangites III conformed from S to E to meet the charge."
+      },
+      {
+        "step": 229,
+        "message": "A Phalangites IV is charging and will add impact in the next close combat resolution."
+      },
+      {
+        "step": 230,
+        "message": "A Companion Cavalry I charged from (1, 4) to (3, 3) against B-PS2 (side) via (1, 3) -> (2, 3) -> (3, 3)."
+      },
+      {
+        "step": 231,
+        "message": "B Psiloi II conformed from S to W to meet the charge."
+      },
+      {
+        "step": 232,
+        "message": "A Companion Cavalry I is charging and will add impact in the next close combat resolution."
+      },
+      {
+        "step": 233,
+        "message": "A Psiloi II prepared missile fire at B Psiloi I; it will resolve at end_bound."
+      },
+      {
+        "step": 234,
+        "message": "A ended the bound."
+      },
+      {
+        "step": 235,
+        "message": "A resolved 1 prepared missile shot."
+      },
+      {
+        "step": 236,
+        "message": "A Psiloi II shot at B Psiloi I (9 vs 4)."
+      },
+      {
+        "step": 237,
+        "message": "B Psiloi I was destroyed by missile fire."
+      },
+      {
+        "step": 238,
+        "message": "B morale loss +1 for Psiloi I (unit lost), now 12/17."
+      },
+      {
+        "step": 239,
+        "message": "Missile result: Psiloi II vs Psiloi I at range 2 -> destroy (9 vs 4)."
+      },
+      {
+        "step": 240,
+        "message": "Frontage lane 3 matched A Companion Cavalry I against B Psiloi II."
+      },
+      {
+        "step": 241,
+        "message": "A Companion Cavalry I engaged B Psiloi II from the front (8 vs 10)."
+      },
+      {
+        "step": 242,
+        "message": "Modifiers: A  [charge impact +3]; B  [terrain +1]."
+      },
+      {
+        "step": 243,
+        "message": "A Companion Cavalry I stood firm despite losing the exchange; units remain in combat while still in contact."
+      },
+      {
+        "step": 244,
+        "message": "Close combat result: Psiloi II beat Companion Cavalry I from the front -> no_effect (8 vs 10)."
+      },
+      {
+        "step": 245,
+        "message": "Frontage lane 5 matched A Phalangites IV against B Phalangites III."
+      },
+      {
+        "step": 246,
+        "message": "A Phalangites IV engaged B Phalangites III from the front (10 vs 3)."
+      },
+      {
+        "step": 247,
+        "message": "Modifiers: A  [ordered pike frontal attack +3]; B  [disordered pike -2]."
+      },
+      {
+        "step": 248,
+        "message": "B Phalangites III was destroyed in close combat."
+      },
+      {
+        "step": 249,
+        "message": "B morale loss +4 for Phalangites III (unit lost), now 16/17."
+      },
+      {
+        "step": 250,
+        "message": "A Phalangites IV advanced from (8, 5) to (7, 5)."
+      },
+      {
+        "step": 251,
+        "message": "Close combat result: Phalangites IV beat Phalangites III from the front -> destroy (10 vs 3)."
+      },
+      {
+        "step": 252,
+        "message": "Frontage lane 6 matched A Phalangites III against B Phalangites IV."
+      },
+      {
+        "step": 253,
+        "message": "A Phalangites III engaged B Phalangites IV from the front (12 vs 13)."
+      },
+      {
+        "step": 254,
+        "message": "Modifiers: A  [ordered pike frontal defense +4]; B  [ordered pike frontal defense +4]."
+      },
+      {
+        "step": 255,
+        "message": "A Phalangites III stood firm despite losing the exchange; units remain in combat while still in contact."
+      },
+      {
+        "step": 256,
+        "message": "Close combat result: Phalangites IV beat Phalangites III from the front -> no_effect (12 vs 13)."
+      },
+      {
+        "step": 257,
+        "message": "A is broken at 22/17 morale loss."
+      },
+      {
+        "step": 258,
+        "message": "Army B wins: Army A is broken."
+      }
+    ],
+    "recent_resolutions": [
+      {
+        "kind": "missile",
+        "attacker_id": "A-PS2",
+        "attacker_name": "Psiloi II",
+        "attacker_position": {
+          "x": 11,
+          "y": 9
+        },
+        "defender_id": "B-PS1",
+        "defender_name": "Psiloi I",
+        "defender_position": {
+          "x": 13,
+          "y": 7
+        },
+        "attacker_score": 3,
+        "attacker_roll": 6,
+        "attacker_total": 9,
+        "defender_score": 2,
+        "defender_roll": 2,
+        "defender_total": 4,
+        "attacker_notes": [
+          "light target +1"
+        ],
+        "defender_notes": [],
+        "aspect": null,
+        "range": 2,
+        "differential": 5,
+        "outcome": "destroy",
+        "winner_id": "A-PS2",
+        "loser_id": "B-PS1"
+      },
+      {
+        "kind": "close_combat",
+        "attacker_id": "A-CV1",
+        "attacker_name": "Companion Cavalry I",
+        "attacker_position": {
+          "x": 3,
+          "y": 3
+        },
+        "defender_id": "B-PS2",
+        "defender_name": "Psiloi II",
+        "defender_position": {
+          "x": 4,
+          "y": 3
+        },
+        "attacker_score": 6,
+        "attacker_roll": 2,
+        "attacker_total": 8,
+        "defender_score": 4,
+        "defender_roll": 6,
+        "defender_total": 10,
+        "attacker_notes": [
+          "charge impact +3"
+        ],
+        "defender_notes": [
+          "terrain +1"
+        ],
+        "aspect": "front",
+        "range": null,
+        "differential": -2,
+        "outcome": "no_effect",
+        "winner_id": "B-PS2",
+        "loser_id": "A-CV1"
+      },
+      {
+        "kind": "close_combat",
+        "attacker_id": "A-PK4",
+        "attacker_name": "Phalangites IV",
+        "attacker_position": {
+          "x": 8,
+          "y": 5
+        },
+        "defender_id": "B-PK3",
+        "defender_name": "Phalangites III",
+        "defender_position": {
+          "x": 7,
+          "y": 5
+        },
+        "attacker_score": 7,
+        "attacker_roll": 3,
+        "attacker_total": 10,
+        "defender_score": 2,
+        "defender_roll": 1,
+        "defender_total": 3,
+        "attacker_notes": [
+          "ordered pike frontal attack +3"
+        ],
+        "defender_notes": [
+          "disordered pike -2"
+        ],
+        "aspect": "front",
+        "range": null,
+        "differential": 7,
+        "outcome": "destroy",
+        "winner_id": "A-PK4",
+        "loser_id": "B-PK3"
+      },
+      {
+        "kind": "close_combat",
+        "attacker_id": "A-PK3",
+        "attacker_name": "Phalangites III",
+        "attacker_position": {
+          "x": 8,
+          "y": 6
+        },
+        "defender_id": "B-PK4",
+        "defender_name": "Phalangites IV",
+        "defender_position": {
+          "x": 7,
+          "y": 6
+        },
+        "attacker_score": 8,
+        "attacker_roll": 4,
+        "attacker_total": 12,
+        "defender_score": 8,
+        "defender_roll": 5,
+        "defender_total": 13,
+        "attacker_notes": [
+          "ordered pike frontal defense +4"
+        ],
+        "defender_notes": [
+          "ordered pike frontal defense +4"
+        ],
+        "aspect": "front",
+        "range": null,
+        "differential": -1,
+        "outcome": "no_effect",
+        "winner_id": "B-PK4",
+        "loser_id": "A-PK3"
+      }
+    ],
+    "pending_shots": [],
+    "endgame_deadline_bound": null,
+    "winner_reason": "Army B wins: Army A is broken.",
+    "use_endgame_clock": false
+  },
+  "decisive_events": [
+    {
+      "action_index": 40,
+      "bound_number": 4,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 12
+      },
+      "losses": {
+        "A": 1,
+        "B": 0
+      },
+      "score_delta": {
+        "A": 0,
+        "B": 12
+      },
+      "loss_delta": {
+        "A": 1,
+        "B": 0
+      },
+      "logs": [
+        "A Companion Cavalry General was destroyed in close combat.",
+        "A Companion Cavalry General, the general, has fallen.",
+        "A morale loss +12 for Companion Cavalry General (unit lost), now 12/17.",
+        "B War Elephants I entered Overpursuit after War Elephants I routed/destroyed Companion Cavalry General (score -1)."
+      ]
+    },
+    {
+      "action_index": 53,
+      "bound_number": 7,
+      "current_player": "B",
+      "scores": {
+        "A": 8,
+        "B": 16
+      },
+      "losses": {
+        "A": 2,
+        "B": 2
+      },
+      "score_delta": {
+        "A": 8,
+        "B": 4
+      },
+      "loss_delta": {
+        "A": 1,
+        "B": 2
+      },
+      "logs": [
+        "A Phalangites I was destroyed in close combat.",
+        "A morale loss +4 for Phalangites I (unit lost), now 16/17.",
+        "B Phalangites III fled from (7, 6) to (7, 4) via (7, 5) -> (7, 4).",
+        "B Phalangites II was destroyed in close combat.",
+        "B morale loss +4 for Phalangites II (unit lost), now 4/17.",
+        "B Phalangites I was destroyed in close combat.",
+        "B morale loss +4 for Phalangites I (unit lost), now 8/17.",
+        "B Psiloi I fled from (11, 7) to (13, 7) via (12, 7) -> (13, 7)."
+      ]
+    },
+    {
+      "action_index": 58,
+      "bound_number": 8,
+      "current_player": "A",
+      "scores": {
+        "A": 11,
+        "B": 22
+      },
+      "losses": {
+        "A": 4,
+        "B": 3
+      },
+      "score_delta": {
+        "A": 3,
+        "B": 6
+      },
+      "loss_delta": {
+        "A": 2,
+        "B": 1
+      },
+      "logs": [
+        "A Tarantine Horse I was destroyed by missile fire.",
+        "A morale loss +2 for Tarantine Horse I (unit lost), now 18/17.",
+        "A Phalangites II was destroyed in close combat.",
+        "A morale loss +4 for Phalangites II (unit lost), now 22/17.",
+        "B Thureophoroi I was destroyed in close combat.",
+        "B morale loss +3 for Thureophoroi I (unit lost), now 11/17.",
+        "A is shaken at 22/17 morale loss."
+      ]
+    },
+    {
+      "action_index": 62,
+      "bound_number": 8,
+      "current_player": "A",
+      "scores": {
+        "A": 16,
+        "B": 22
+      },
+      "losses": {
+        "A": 4,
+        "B": 5
+      },
+      "score_delta": {
+        "A": 5,
+        "B": 0
+      },
+      "loss_delta": {
+        "A": 0,
+        "B": 2
+      },
+      "logs": [
+        "B Psiloi I was destroyed by missile fire.",
+        "B morale loss +1 for Psiloi I (unit lost), now 12/17.",
+        "B Phalangites III was destroyed in close combat.",
+        "B morale loss +4 for Phalangites III (unit lost), now 16/17.",
+        "A is broken at 22/17 morale loss.",
+        "Army B wins: Army A is broken."
+      ]
+    }
+  ],
+  "score_events": [
+    {
+      "action_index": 1,
+      "bound_number": 1,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "B Tarantine Horse I deployed from (13, 1) to (13, 1)."
+      ]
+    },
+    {
+      "action_index": 2,
+      "bound_number": 1,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "B War Elephants I deployed from (12, 1) to (12, 1)."
+      ]
+    },
+    {
+      "action_index": 3,
+      "bound_number": 1,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "B Psiloi I deployed from (11, 1) to (11, 1)."
+      ]
+    },
+    {
+      "action_index": 4,
+      "bound_number": 1,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "B Thureophoroi I deployed from (10, 1) to (10, 1)."
+      ]
+    },
+    {
+      "action_index": 5,
+      "bound_number": 1,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "B Phalangites I deployed from (9, 1) to (9, 1)."
+      ]
+    },
+    {
+      "action_index": 6,
+      "bound_number": 1,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "B Phalangites II deployed from (8, 1) to (8, 1)."
+      ]
+    },
+    {
+      "action_index": 7,
+      "bound_number": 1,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "B Phalangites III deployed from (7, 1) to (7, 1)."
+      ]
+    },
+    {
+      "action_index": 8,
+      "bound_number": 1,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "B Phalangites IV deployed from (6, 1) to (6, 1)."
+      ]
+    },
+    {
+      "action_index": 9,
+      "bound_number": 1,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "B Thureophoroi II deployed from (5, 1) to (5, 1)."
+      ]
+    },
+    {
+      "action_index": 10,
+      "bound_number": 1,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "B Psiloi II deployed from (4, 1) to (4, 1)."
+      ]
+    },
+    {
+      "action_index": 11,
+      "bound_number": 1,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "B Companion Cavalry General deployed from (3, 0) to (8, 0)."
+      ]
+    },
+    {
+      "action_index": 12,
+      "bound_number": 1,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "B Companion Cavalry I deployed from (12, 0) to (7, 0)."
+      ]
+    },
+    {
+      "action_index": 13,
+      "bound_number": 1,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "B finalized deployment.",
+        "A deployment phase begins."
+      ]
+    },
+    {
+      "action_index": 14,
+      "bound_number": 1,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "A Companion Cavalry I deployed from (3, 9) to (1, 9)."
+      ]
+    },
+    {
+      "action_index": 15,
+      "bound_number": 1,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "A Tarantine Horse I deployed from (2, 8) to (2, 9)."
+      ]
+    },
+    {
+      "action_index": 16,
+      "bound_number": 1,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "A War Elephants I deployed from (3, 8) to (3, 9)."
+      ]
+    },
+    {
+      "action_index": 17,
+      "bound_number": 1,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "A Psiloi I deployed from (4, 8) to (4, 9)."
+      ]
+    },
+    {
+      "action_index": 18,
+      "bound_number": 1,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "A Thureophoroi I deployed from (5, 8) to (5, 8)."
+      ]
+    },
+    {
+      "action_index": 19,
+      "bound_number": 1,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "A Phalangites I deployed from (6, 8) to (6, 8)."
+      ]
+    },
+    {
+      "action_index": 20,
+      "bound_number": 1,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "A Phalangites II deployed from (7, 8) to (7, 8)."
+      ]
+    },
+    {
+      "action_index": 21,
+      "bound_number": 1,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "A Phalangites III deployed from (8, 8) to (8, 8)."
+      ]
+    },
+    {
+      "action_index": 22,
+      "bound_number": 1,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "A Phalangites IV deployed from (9, 8) to (9, 8)."
+      ]
+    },
+    {
+      "action_index": 23,
+      "bound_number": 1,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "A Thureophoroi II deployed from (10, 8) to (10, 8)."
+      ]
+    },
+    {
+      "action_index": 24,
+      "bound_number": 1,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "A Psiloi II deployed from (11, 8) to (11, 9)."
+      ]
+    },
+    {
+      "action_index": 25,
+      "bound_number": 1,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "A Companion Cavalry General deployed from (12, 9) to (12, 9)."
+      ]
+    },
+    {
+      "action_index": 26,
+      "bound_number": 1,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "A finalized deployment.",
+        "Battle begins. B starts bound 1 with 8 PIPs."
+      ]
+    },
+    {
+      "action_index": 27,
+      "bound_number": 1,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "B group moved B-PK4, B-PK3, B-PK2, B-PK1, B-SP1, B-PS1 for 2 PIPs."
+      ]
+    },
+    {
+      "action_index": 28,
+      "bound_number": 1,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "B group moved B-EL1, B-LH1 for 2 PIPs."
+      ]
+    },
+    {
+      "action_index": 29,
+      "bound_number": 1,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "B Psiloi II moved from (4, 1) facing S to (4, 3) facing S via (4, 2) -> (4, 3)."
+      ]
+    },
+    {
+      "action_index": 30,
+      "bound_number": 2,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "B ended the bound.",
+        "No close combats were in contact at bound end.",
+        "A begins bound 2 with 8 PIPs."
+      ]
+    },
+    {
+      "action_index": 31,
+      "bound_number": 2,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "A Tarantine Horse I marched from (2, 9) to (2, 4) via (2, 8) -> (2, 7) -> (2, 6) -> (2, 5) -> (2, 4)."
+      ]
+    },
+    {
+      "action_index": 32,
+      "bound_number": 2,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "A Companion Cavalry I marched from (1, 9) to (1, 4) via (1, 8) -> (1, 7) -> (1, 6) -> (1, 5) -> (1, 4)."
+      ]
+    },
+    {
+      "action_index": 33,
+      "bound_number": 2,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "A group moved A-PS2, A-GEN for 2 PIPs.",
+        "A War Elephants I is out of command.",
+        "A Psiloi I is out of command."
+      ]
+    },
+    {
+      "action_index": 34,
+      "bound_number": 3,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "A ended the bound.",
+        "No close combats were in contact at bound end.",
+        "B begins bound 3 with 8 PIPs."
+      ]
+    },
+    {
+      "action_index": 35,
+      "bound_number": 3,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "B Psiloi I charged from (11, 3) to (11, 5) against A-PS2 (front) via (11, 4) -> (11, 5).",
+        "A Psiloi II evaded from (11, 6) to (11, 8) via (11, 7) -> (11, 8) and became disordered."
+      ]
+    },
+    {
+      "action_index": 36,
+      "bound_number": 3,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "B War Elephants I charged from (12, 4) to (12, 5) against A-GEN (front) via (12, 5).",
+        "B War Elephants I is charging and will add impact in the next close combat resolution."
+      ]
+    },
+    {
+      "action_index": 37,
+      "bound_number": 3,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "B group moved B-PK4, B-PK3, B-PK2, B-PK1 for 1 PIPs."
+      ]
+    },
+    {
+      "action_index": 38,
+      "bound_number": 3,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "B Thureophoroi I moved from (10, 3) facing S to (10, 5) facing S via (10, 4) -> (10, 5)."
+      ]
+    },
+    {
+      "action_index": 39,
+      "bound_number": 3,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 0
+      },
+      "losses": {
+        "A": 0,
+        "B": 0
+      },
+      "logs": [
+        "B Psiloi II prepared missile fire at A Tarantine Horse I; it will resolve at end_bound."
+      ]
+    },
+    {
+      "action_index": 40,
+      "bound_number": 4,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 12
+      },
+      "losses": {
+        "A": 1,
+        "B": 0
+      },
+      "logs": [
+        "B ended the bound.",
+        "B resolved 1 prepared missile shot.",
+        "B Psiloi II shot at A Tarantine Horse I (2 vs 6).",
+        "The missiles caused no significant effect.",
+        "Missile result: Psiloi II vs Tarantine Horse I at range 1 -> no_effect (2 vs 6).",
+        "Frontage lane 12 matched B War Elephants I against A Companion Cavalry General.",
+        "B War Elephants I engaged A Companion Cavalry General from the front (11 vs 5).",
+        "Modifiers: B  [free flank support +1]; A  [quality +1, general aura +1, outflanked on the line -1].",
+        "A Companion Cavalry General was destroyed in close combat.",
+        "A Companion Cavalry General, the general, has fallen.",
+        "A morale loss +12 for Companion Cavalry General (unit lost), now 12/17.",
+        "A Thureophoroi I is out of command.",
+        "A Phalangites I is out of command.",
+        "A Phalangites II is out of command.",
+        "A Phalangites III is out of command.",
+        "A Phalangites IV is out of command.",
+        "A Thureophoroi II is out of command.",
+        "A Psiloi II is out of command.",
+        "B War Elephants I entered Overpursuit after War Elephants I routed/destroyed Companion Cavalry General (score -1).",
+        "B War Elephants I overpursued from (12, 5) to (12, 6) via (12, 6).",
+        "Close combat result: War Elephants I beat Companion Cavalry General from the front -> destroy (11 vs 5).",
+        "A Psiloi II rallied and restored good order.",
+        "B War Elephants I is out of command.",
+        "A begins bound 4 with 8 PIPs."
+      ]
+    },
+    {
+      "action_index": 41,
+      "bound_number": 4,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 12
+      },
+      "losses": {
+        "A": 1,
+        "B": 0
+      },
+      "logs": [
+        "A Phalangites I charged from (6, 8) to (6, 6) against B-PK4 (front) via (6, 7) -> (6, 6).",
+        "A Phalangites I is charging and will add impact in the next close combat resolution."
+      ]
+    },
+    {
+      "action_index": 42,
+      "bound_number": 4,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 12
+      },
+      "losses": {
+        "A": 1,
+        "B": 0
+      },
+      "logs": [
+        "A Phalangites II charged from (7, 8) to (7, 6) against B-PK3 (front) via (7, 7) -> (7, 6).",
+        "A Phalangites II is charging and will add impact in the next close combat resolution."
+      ]
+    },
+    {
+      "action_index": 43,
+      "bound_number": 4,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 12
+      },
+      "losses": {
+        "A": 1,
+        "B": 0
+      },
+      "logs": [
+        "A Psiloi II prepared missile fire at B War Elephants I; it will resolve at end_bound."
+      ]
+    },
+    {
+      "action_index": 44,
+      "bound_number": 5,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 12
+      },
+      "losses": {
+        "A": 1,
+        "B": 0
+      },
+      "logs": [
+        "A ended the bound.",
+        "A resolved 1 prepared missile shot.",
+        "A Psiloi II shot at B War Elephants I (8 vs 7).",
+        "B War Elephants I recoiled from (12, 6) to (13, 5).",
+        "B War Elephants I became disordered.",
+        "B War Elephants I panicked from DisplacedThroughFriends with score -2.",
+        "B War Elephants I panicked from (13, 5) to (13, 3) via (13, 4) -> (13, 3).",
+        "B Tarantine Horse I was disordered by panicking War Elephants I.",
+        "Missile result: Psiloi II vs War Elephants I at range 2 -> recoil (8 vs 7).",
+        "Frontage lane 6 matched A Phalangites I against B Phalangites IV.",
+        "A Phalangites I engaged B Phalangites IV from the front (13 vs 11).",
+        "Modifiers: A  [ordered pike frontal attack +3]; B  [ordered pike frontal defense +4].",
+        "B Phalangites IV stood firm despite losing the exchange; units remain in combat while still in contact.",
+        "Close combat result: Phalangites I beat Phalangites IV from the front -> no_effect (13 vs 11).",
+        "Frontage lane 7 matched A Phalangites II against B Phalangites III.",
+        "A Phalangites II engaged B Phalangites III from the front (11 vs 13).",
+        "Modifiers: A  [ordered pike frontal attack +3, outflanked on the line -1]; B  [free flank support +1, ordered pike frontal defense +4].",
+        "A Phalangites II stood firm despite losing the exchange; units remain in combat while still in contact.",
+        "Close combat result: Phalangites III beat Phalangites II from the front -> no_effect (11 vs 13).",
+        "B War Elephants I recovered from panic but remains disordered.",
+        "B Tarantine Horse I rallied and restored good order.",
+        "B War Elephants I is back in command.",
+        "B begins bound 5 with 8 PIPs."
+      ]
+    },
+    {
+      "action_index": 45,
+      "bound_number": 5,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 12
+      },
+      "losses": {
+        "A": 1,
+        "B": 0
+      },
+      "logs": [
+        "B Phalangites II charged from (8, 5) to (8, 6) against A-PK2 (side) via (8, 6).",
+        "A Phalangites II became DisorderedPike (flank or rear contact).",
+        "B Phalangites II is charging and will add impact in the next close combat resolution."
+      ]
+    },
+    {
+      "action_index": 46,
+      "bound_number": 5,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 12
+      },
+      "losses": {
+        "A": 1,
+        "B": 0
+      },
+      "logs": [
+        "B Phalangites I charged from (9, 5) to (9, 7) against A-PK4 (front) via (9, 6) -> (9, 7).",
+        "B Phalangites I is charging and will add impact in the next close combat resolution."
+      ]
+    },
+    {
+      "action_index": 47,
+      "bound_number": 5,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 12
+      },
+      "losses": {
+        "A": 1,
+        "B": 0
+      },
+      "logs": [
+        "B Psiloi I charged from (11, 5) to (11, 7) against A-PS2 (front) via (11, 6) -> (11, 7).",
+        "B Psiloi I is charging and will add impact in the next close combat resolution.",
+        "B Psiloi I is out of command."
+      ]
+    },
+    {
+      "action_index": 48,
+      "bound_number": 5,
+      "current_player": "B",
+      "scores": {
+        "A": 0,
+        "B": 12
+      },
+      "losses": {
+        "A": 1,
+        "B": 0
+      },
+      "logs": [
+        "B Psiloi II prepared missile fire at A Tarantine Horse I; it will resolve at end_bound."
+      ]
+    },
+    {
+      "action_index": 49,
+      "bound_number": 6,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 12
+      },
+      "losses": {
+        "A": 1,
+        "B": 0
+      },
+      "logs": [
+        "B ended the bound.",
+        "B resolved 1 prepared missile shot.",
+        "B Psiloi II shot at A Tarantine Horse I (6 vs 8).",
+        "The missiles caused no significant effect.",
+        "Missile result: Psiloi II vs Tarantine Horse I at range 1 -> no_effect (6 vs 8).",
+        "Frontage lane 6 matched B Phalangites IV against A Phalangites I.",
+        "B Phalangites IV engaged A Phalangites I from the front (13 vs 14).",
+        "Modifiers: B  [ordered pike frontal defense +4]; A  [ordered pike frontal defense +4].",
+        "B Phalangites IV stood firm despite losing the exchange; units remain in combat while still in contact.",
+        "Close combat result: Phalangites I beat Phalangites IV from the front -> no_effect (13 vs 14).",
+        "Frontage lane 7 matched B Phalangites III against A Phalangites II.",
+        "B Phalangites III engaged A Phalangites II from the front (9 vs 7).",
+        "Modifiers: B  [ordered pike frontal defense +4]; A  [disordered pike -2, extra side contact -1].",
+        "A Phalangites II recoiled from (7, 6) to (7, 7).",
+        "B Phalangites III pursued from (7, 5) to (7, 6) via (7, 6).",
+        "Close combat result: Phalangites III beat Phalangites II from the front -> recoil (9 vs 7).",
+        "Frontage lane 9 matched B Phalangites I against A Phalangites IV.",
+        "B Phalangites I engaged A Phalangites IV from the front (10 vs 15).",
+        "Modifiers: B  [ordered pike frontal attack +3, outflanked on the line -2]; A  [free flank support +2, ordered pike frontal defense +4].",
+        "B Phalangites I recoiled from (9, 7) to (9, 6).",
+        "B Phalangites I became disordered.",
+        "A Phalangites IV pursued from (9, 8) to (9, 7) via (9, 7).",
+        "Close combat result: Phalangites IV beat Phalangites I from the front -> recoil (10 vs 15).",
+        "Frontage lane 11 matched B Psiloi I against A Psiloi II.",
+        "B Psiloi I engaged A Psiloi II from the front (8 vs 6).",
+        "Modifiers: B  [terrain +1, outflanked on the line -1]; A  [free flank support +1].",
+        "A Psiloi II recoiled from (11, 8) to (11, 9).",
+        "A Psiloi II became disordered.",
+        "Close combat result: Psiloi I beat Psiloi II from the front -> recoil (8 vs 6).",
+        "A Psiloi II rallied and restored good order.",
+        "A begins bound 6 with 8 PIPs."
+      ]
+    },
+    {
+      "action_index": 50,
+      "bound_number": 6,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 12
+      },
+      "losses": {
+        "A": 1,
+        "B": 0
+      },
+      "logs": [
+        "A Phalangites III charged from (8, 8) to (8, 7) against B-PK2 (side) via (8, 7).",
+        "B Phalangites II became DisorderedPike (flank or rear contact).",
+        "B Phalangites II conformed from W to S to meet the charge.",
+        "A Phalangites III is charging and will add impact in the next close combat resolution.",
+        "A Phalangites I became DisorderedPike (flank or rear contact).",
+        "B Phalangites III became DisorderedPike (flank or rear contact)."
+      ]
+    },
+    {
+      "action_index": 51,
+      "bound_number": 6,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 12
+      },
+      "losses": {
+        "A": 1,
+        "B": 0
+      },
+      "logs": [
+        "A Thureophoroi II charged from (10, 8) to (10, 7) against B-PS1 (side) via (10, 7).",
+        "B Psiloi I conformed from S to W to meet the charge.",
+        "A Thureophoroi II is charging and will add impact in the next close combat resolution."
+      ]
+    },
+    {
+      "action_index": 52,
+      "bound_number": 6,
+      "current_player": "A",
+      "scores": {
+        "A": 0,
+        "B": 12
+      },
+      "losses": {
+        "A": 1,
+        "B": 0
+      },
+      "logs": [
+        "A Psiloi II prepared missile fire at B Psiloi I; it will resolve at end_bound."
+      ]
+    },
+    {
+      "action_index": 53,
+      "bound_number": 7,
+      "current_player": "B",
+      "scores": {
+        "A": 8,
+        "B": 16
+      },
+      "losses": {
+        "A": 2,
+        "B": 2
+      },
+      "logs": [
+        "A ended the bound.",
+        "A resolved 1 prepared missile shot.",
+        "A Psiloi II shot at B Psiloi I (5 vs 5).",
+        "The missiles caused no significant effect.",
+        "Missile result: Psiloi II vs Psiloi I at range 2 -> no_effect (5 vs 5).",
+        "Frontage lane 6 matched A Phalangites I against B Phalangites IV.",
+        "A Phalangites I engaged B Phalangites IV from the front (5 vs 12).",
+        "Modifiers: A  [disordered pike -2, extra side contact -1]; B  [ordered pike frontal defense +4].",
+        "A Phalangites I was destroyed in close combat.",
+        "A morale loss +4 for Phalangites I (unit lost), now 16/17.",
+        "B Phalangites IV advanced from (6, 5) to (6, 6).",
+        "Close combat result: Phalangites IV beat Phalangites I from the front -> destroy (5 vs 12).",
+        "Frontage lane 7 matched A Phalangites II against B Phalangites III.",
+        "A Phalangites II engaged B Phalangites III from the front (6 vs 2).",
+        "Modifiers: A  [disordered pike -2]; B  [disordered pike -2, extra side contact -1].",
+        "B Phalangites III fled from (7, 6) to (7, 4) via (7, 5) -> (7, 4).",
+        "A Phalangites II pursued from (7, 7) to (7, 6) via (7, 6).",
+        "Close combat result: Phalangites II beat Phalangites III from the front -> flee (6 vs 2).",
+        "Frontage lane 8 matched A Phalangites III against B Phalangites II.",
+        "A Phalangites III engaged B Phalangites II from the front (12 vs 5).",
+        "Modifiers: A  [ordered pike frontal attack +3]; B  [disordered pike -2].",
+        "B Phalangites II was destroyed in close combat.",
+        "B morale loss +4 for Phalangites II (unit lost), now 4/17.",
+        "A Phalangites III advanced from (8, 7) to (8, 6).",
+        "Close combat result: Phalangites III beat Phalangites II from the front -> destroy (12 vs 5).",
+        "Frontage lane 9 matched A Phalangites IV against B Phalangites I.",
+        "A Phalangites IV engaged B Phalangites I from the front (12 vs 6).",
+        "Modifiers: A  [ordered pike frontal defense +4]; B  [disordered pike -2].",
+        "B Phalangites I was destroyed in close combat.",
+        "B morale loss +4 for Phalangites I (unit lost), now 8/17.",
+        "A Phalangites IV advanced from (9, 7) to (9, 6).",
+        "Close combat result: Phalangites IV beat Phalangites I from the front -> destroy (12 vs 6).",
+        "Frontage lane 7 matched A Thureophoroi II against B Psiloi I.",
+        "A Thureophoroi II engaged B Psiloi I from the front (9 vs 4).",
+        "Modifiers: A  [charge impact +1]; B  [terrain +1].",
+        "B Psiloi I became disordered.",
+        "B Psiloi I fled from (11, 7) to (13, 7) via (12, 7) -> (13, 7).",
+        "Close combat result: Thureophoroi II beat Psiloi I from the front -> flee (9 vs 4).",
+        "A Phalangites II turned from N to W to face lingering contact.",
+        "B Phalangites IV turned from S to E to face lingering contact.",
+        "B Psiloi I rallied and restored good order.",
+        "B begins bound 7 with 8 PIPs."
+      ]
+    },
+    {
+      "action_index": 54,
+      "bound_number": 7,
+      "current_player": "B",
+      "scores": {
+        "A": 8,
+        "B": 16
+      },
+      "losses": {
+        "A": 2,
+        "B": 2
+      },
+      "logs": [
+        "B Phalangites III charged from (7, 4) to (7, 5) against A-PK2 (side) via (7, 5).",
+        "B Phalangites III is charging and will add impact in the next close combat resolution."
+      ]
+    },
+    {
+      "action_index": 55,
+      "bound_number": 7,
+      "current_player": "B",
+      "scores": {
+        "A": 8,
+        "B": 16
+      },
+      "losses": {
+        "A": 2,
+        "B": 2
+      },
+      "logs": [
+        "B Thureophoroi I charged from (10, 5) to (9, 5) against A-PK4 (front) via (9, 5).",
+        "B Thureophoroi I is charging and will add impact in the next close combat resolution."
+      ]
+    },
+    {
+      "action_index": 56,
+      "bound_number": 7,
+      "current_player": "B",
+      "scores": {
+        "A": 8,
+        "B": 16
+      },
+      "losses": {
+        "A": 2,
+        "B": 2
+      },
+      "logs": [
+        "B Psiloi II prepared missile fire at A Tarantine Horse I; it will resolve at end_bound."
+      ]
+    },
+    {
+      "action_index": 57,
+      "bound_number": 7,
+      "current_player": "B",
+      "scores": {
+        "A": 8,
+        "B": 16
+      },
+      "losses": {
+        "A": 2,
+        "B": 2
+      },
+      "logs": [
+        "B Psiloi I prepared missile fire at A Psiloi II; it will resolve at end_bound."
+      ]
+    },
+    {
+      "action_index": 58,
+      "bound_number": 8,
+      "current_player": "A",
+      "scores": {
+        "A": 11,
+        "B": 22
+      },
+      "losses": {
+        "A": 4,
+        "B": 3
+      },
+      "logs": [
+        "B ended the bound.",
+        "B resolved 2 prepared missile shots.",
+        "B Psiloi II shot at A Tarantine Horse I (6 vs 4).",
+        "A Tarantine Horse I was destroyed by missile fire.",
+        "A morale loss +2 for Tarantine Horse I (unit lost), now 18/17.",
+        "Missile result: Psiloi II vs Tarantine Horse I at range 1 -> destroy (6 vs 4).",
+        "B Psiloi I shot at A Psiloi II (6 vs 7).",
+        "The missiles caused no significant effect.",
+        "Missile result: Psiloi I vs Psiloi II at range 2 -> no_effect (6 vs 7).",
+        "Frontage lane 6 matched B Phalangites IV against A Phalangites II.",
+        "B Phalangites IV engaged A Phalangites II from the front (11 vs 3).",
+        "Modifiers: B  [ordered pike frontal defense +4]; A  [disordered pike -2, extra side contact -1].",
+        "A Phalangites II was destroyed in close combat.",
+        "A morale loss +4 for Phalangites II (unit lost), now 22/17.",
+        "B Phalangites IV advanced from (6, 6) to (7, 6).",
+        "Close combat result: Phalangites IV beat Phalangites II from the front -> destroy (11 vs 3).",
+        "Frontage lane 9 matched B Thureophoroi I against A Phalangites IV.",
+        "B Thureophoroi I engaged A Phalangites IV from the front (8 vs 15).",
+        "Modifiers: B  [charge impact +1, outflanked on the line -1]; A  [free flank support +1, ordered pike frontal defense +4].",
+        "B Thureophoroi I was destroyed in close combat.",
+        "B morale loss +3 for Thureophoroi I (unit lost), now 11/17.",
+        "A Phalangites IV advanced from (9, 6) to (9, 5).",
+        "Close combat result: Phalangites IV beat Thureophoroi I from the front -> destroy (8 vs 15).",
+        "A is shaken at 22/17 morale loss.",
+        "A Phalangites III turned from N to W to face lingering contact.",
+        "A begins bound 8 with 8 PIPs."
+      ]
+    },
+    {
+      "action_index": 59,
+      "bound_number": 8,
+      "current_player": "A",
+      "scores": {
+        "A": 11,
+        "B": 22
+      },
+      "losses": {
+        "A": 4,
+        "B": 3
+      },
+      "logs": [
+        "A Phalangites IV charged from (9, 5) to (8, 5) against B-PK3 (side) via (8, 5).",
+        "B Phalangites III conformed from S to E to meet the charge.",
+        "A Phalangites IV is charging and will add impact in the next close combat resolution."
+      ]
+    },
+    {
+      "action_index": 60,
+      "bound_number": 8,
+      "current_player": "A",
+      "scores": {
+        "A": 11,
+        "B": 22
+      },
+      "losses": {
+        "A": 4,
+        "B": 3
+      },
+      "logs": [
+        "A Companion Cavalry I charged from (1, 4) to (3, 3) against B-PS2 (side) via (1, 3) -> (2, 3) -> (3, 3).",
+        "B Psiloi II conformed from S to W to meet the charge.",
+        "A Companion Cavalry I is charging and will add impact in the next close combat resolution."
+      ]
+    },
+    {
+      "action_index": 61,
+      "bound_number": 8,
+      "current_player": "A",
+      "scores": {
+        "A": 11,
+        "B": 22
+      },
+      "losses": {
+        "A": 4,
+        "B": 3
+      },
+      "logs": [
+        "A Psiloi II prepared missile fire at B Psiloi I; it will resolve at end_bound."
+      ]
+    },
+    {
+      "action_index": 62,
+      "bound_number": 8,
+      "current_player": "A",
+      "scores": {
+        "A": 16,
+        "B": 22
+      },
+      "losses": {
+        "A": 4,
+        "B": 5
+      },
+      "logs": [
+        "A ended the bound.",
+        "A resolved 1 prepared missile shot.",
+        "A Psiloi II shot at B Psiloi I (9 vs 4).",
+        "B Psiloi I was destroyed by missile fire.",
+        "B morale loss +1 for Psiloi I (unit lost), now 12/17.",
+        "Missile result: Psiloi II vs Psiloi I at range 2 -> destroy (9 vs 4).",
+        "Frontage lane 3 matched A Companion Cavalry I against B Psiloi II.",
+        "A Companion Cavalry I engaged B Psiloi II from the front (8 vs 10).",
+        "Modifiers: A  [charge impact +3]; B  [terrain +1].",
+        "A Companion Cavalry I stood firm despite losing the exchange; units remain in combat while still in contact.",
+        "Close combat result: Psiloi II beat Companion Cavalry I from the front -> no_effect (8 vs 10).",
+        "Frontage lane 5 matched A Phalangites IV against B Phalangites III.",
+        "A Phalangites IV engaged B Phalangites III from the front (10 vs 3).",
+        "Modifiers: A  [ordered pike frontal attack +3]; B  [disordered pike -2].",
+        "B Phalangites III was destroyed in close combat.",
+        "B morale loss +4 for Phalangites III (unit lost), now 16/17.",
+        "A Phalangites IV advanced from (8, 5) to (7, 5).",
+        "Close combat result: Phalangites IV beat Phalangites III from the front -> destroy (10 vs 3).",
+        "Frontage lane 6 matched A Phalangites III against B Phalangites IV.",
+        "A Phalangites III engaged B Phalangites IV from the front (12 vs 13).",
+        "Modifiers: A  [ordered pike frontal defense +4]; B  [ordered pike frontal defense +4].",
+        "A Phalangites III stood firm despite losing the exchange; units remain in combat while still in contact.",
+        "Close combat result: Phalangites IV beat Phalangites III from the front -> no_effect (12 vs 13).",
+        "A is broken at 22/17 morale loss.",
+        "Army B wins: Army A is broken."
+      ]
+    }
+  ]
+}

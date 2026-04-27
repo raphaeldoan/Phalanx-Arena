@@ -1,0 +1,134 @@
+:root {
+  --bg: #f6f2eb;
+  --surface: rgba(248, 243, 236, 0.84);
+  --surface-elevated: rgba(255, 251, 246, 0.94);
+  --surface-glass: rgba(251, 247, 240, 0.76);
+  --surface-muted: rgba(241, 234, 225, 0.9);
+  --surface-board: rgba(251, 247, 240, 0.92);
+  --surface-board-alt: rgba(242, 235, 226, 0.96);
+  --border-soft: rgba(57, 47, 38, 0.08);
+  --border-strong: rgba(57, 47, 38, 0.14);
+  --text-strong: #1f1a15;
+  --text-muted: #6e655d;
+  --accent-strong: #24201b;
+  --accent-soft: rgba(36, 32, 27, 0.06);
+  --accent-warm: #ad9470;
+  --accent-warm-soft: rgba(173, 148, 112, 0.16);
+  --danger-surface: rgba(138, 75, 58, 0.1);
+  --danger-border: rgba(138, 75, 58, 0.18);
+  --token-ink: #f8f3eb;
+  --army-a-surface: rgba(226, 236, 233, 0.84);
+  --army-a-border: rgba(84, 112, 106, 0.2);
+  --army-a-solid: #516a64;
+  --army-a-deep: #435a55;
+  --army-a-ink: #445b55;
+  --army-a-ring: rgba(84, 112, 106, 0.28);
+  --army-b-surface: rgba(241, 231, 223, 0.88);
+  --army-b-border: rgba(132, 96, 72, 0.2);
+  --army-b-solid: #7f6048;
+  --army-b-deep: #6a4f3d;
+  --army-b-ink: #6b523c;
+  --army-b-ring: rgba(132, 96, 72, 0.28);
+  --state-info-surface: rgba(229, 235, 241, 0.96);
+  --state-info-border: rgba(95, 115, 132, 0.3);
+  --state-info-ink: #5f7384;
+  --state-legal-surface: rgba(245, 237, 224, 0.96);
+  --state-legal-border: rgba(173, 148, 112, 0.34);
+  --state-legal-ink: #8b7556;
+  --state-danger-surface: rgba(245, 233, 228, 0.96);
+  --state-danger-border: rgba(132, 96, 72, 0.34);
+  --state-danger-ink: #7a5844;
+  --terrain-forest-surface: rgba(230, 236, 227, 0.96);
+  --terrain-hill-surface: rgba(243, 233, 216, 0.96);
+  --terrain-water-surface: rgba(226, 235, 241, 0.96);
+  --terrain-camp-surface: rgba(235, 228, 217, 0.96);
+  --shadow-soft:
+    0 8px 24px rgba(42, 34, 28, 0.05),
+    0 2px 8px rgba(42, 34, 28, 0.03);
+  --shadow-panel:
+    0 14px 36px rgba(34, 28, 23, 0.08),
+    0 4px 14px rgba(34, 28, 23, 0.04);
+  --shadow-floating:
+    0 12px 32px rgba(34, 28, 23, 0.1),
+    0 4px 12px rgba(34, 28, 23, 0.05);
+  --focus-ring: 0 0 0 4px rgba(173, 148, 112, 0.16);
+  --serif:
+    'Iowan Old Style',
+    'Baskerville Old Face',
+    'Palatino Linotype',
+    'Book Antiqua',
+    Georgia,
+    serif;
+  --sans:
+    'SF Pro Text',
+    'SF Pro Display',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
+  --mono: 'SF Mono', 'Cascadia Code', 'Consolas', 'Courier New', monospace;
+
+  color: var(--text-strong);
+  background:
+    radial-gradient(circle at 14% 10%, rgba(255, 255, 255, 0.96), transparent 28%),
+    radial-gradient(circle at 88% 14%, rgba(213, 196, 169, 0.16), transparent 24%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.24), transparent 20%),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0, rgba(255, 255, 255, 0.08) 1px, transparent 1px, transparent 96px),
+    linear-gradient(180deg, #f8f5ef, #eee5d8);
+  font-family: var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--text-strong);
+  background: transparent;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+p {
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  font-family: var(--serif);
+  font-weight: 600;
+  letter-spacing: 0.015em;
+  color: var(--text-strong);
+}
+
+h1 {
+  font-size: clamp(2.4rem, 4vw, 4.2rem);
+  line-height: 0.98;
+}
+
+h2 {
+  font-size: 1.45rem;
+  margin-bottom: 8px;
+}
+
+strong {
+  color: var(--text-strong);
+  font-weight: 600;
+}
+
+#root {
+  min-height: 100vh;
+  background: transparent;
+}

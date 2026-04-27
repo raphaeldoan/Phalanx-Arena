@@ -1,0 +1,40 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.1.1",
+  "type": "module",
+  "scripts": {
+    "build:engine-wasm": "node ./scripts/build-engine-wasm.mjs",
+    "predev": "npm run build:engine-wasm",
+    "prebuild": "npm run build:engine-wasm",
+    "prebuild:cloudflare": "node -e \"require('node:fs').rmSync('cloudflare-dist',{ recursive: true, force: true })\" && node ./scripts/ensure-engine-wasm.mjs",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:cloudflare": "tsc -b && vite build --mode cloudflare",
+    "deploy:cloudflare": "npm run build:cloudflare && npx wrangler deploy",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "replay:video": "node ./scripts/generate-replay-video.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "three": "^0.183.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@types/node": "^24.12.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/three": "^0.183.1",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^9.39.4",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.4.0",
+    "playwright": "^1.59.1",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.58.0",
+    "vite": "^8.0.4"
+  }
+}

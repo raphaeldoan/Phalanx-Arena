@@ -1,0 +1,81 @@
+# OS/editor files
+.DS_Store
+
+# Local secrets and private environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python caches, environments, and package outputs
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+backend/.venv/
+backend/.coverage
+backend/htmlcov/
+backend/build/
+backend/dist/
+backend/*.egg-info/
+backend/src/*.egg-info/
+
+# Rust build outputs and compiled local artifacts
+target/
+*.rlib
+*.rmeta
+
+# Node, Vite, and Cloudflare build outputs
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/cloudflare-dist/
+frontend/.wrangler/
+frontend/.vite/
+
+# WASM generated artifact policy:
+# - frontend/src/generated/engine-wasm is the committed browser/deploy bundle.
+# - that directory's own .gitignore allowlists only the required bundle files.
+# - generated copies elsewhere are stale build output and should not be committed.
+engine/engine-wasm/src/generated/
+engine/frontend/src/generated/
+
+# Backend tournament/headless runtime outputs.
+# Ad hoc runs remain ignored, but the current publishable tournament result,
+# generated charts, and per-battle state summaries are kept for the public repo.
+backend/runs/*
+!backend/runs/
+!backend/runs/make_charts.py
+!backend/runs/full-tournament.json
+!backend/runs/charts/
+backend/runs/charts/*
+!backend/runs/charts/*.png
+!backend/runs/full-tournament-battle-reports/
+backend/runs/full-tournament-battle-reports/**
+!backend/runs/full-tournament-battle-reports/**/
+!backend/runs/full-tournament-battle-reports/**/state-summary.json
+
+# Local dev logs and captured/generated artifacts
+*.log
+*.pid
+/windows-dev-env.bat
+/artifacts/
+fullcode.txt
+/backend-server*.log
+/frontend-server*.log
+/bound*-board.png
+/bound*-page.png
+/bound*-replay.json
+/bound*-snapshot.json
+/bound*-state-summary.json
+/full-headless-match*.json
+/headless-benchmark*.json
+/tmp-loader-center-check.png
+/visual-sample-board.png
+

@@ -1,0 +1,401 @@
+{
+  "scenario_id": "classic_battle",
+  "name": "Classic Battle",
+  "description": "A balanced Hellenistic-style set-piece battle with mirrored terrain on both approaches: a small hill on the left and a small forest on the right from each army's perspective.",
+  "board_width": 16,
+  "board_height": 10,
+  "terrain": [
+    {
+      "position": {
+        "x": 4,
+        "y": 6
+      },
+      "terrain": "hill"
+    },
+    {
+      "position": {
+        "x": 5,
+        "y": 6
+      },
+      "terrain": "hill"
+    },
+    {
+      "position": {
+        "x": 4,
+        "y": 7
+      },
+      "terrain": "hill"
+    },
+    {
+      "position": {
+        "x": 10,
+        "y": 6
+      },
+      "terrain": "forest"
+    },
+    {
+      "position": {
+        "x": 11,
+        "y": 6
+      },
+      "terrain": "forest"
+    },
+    {
+      "position": {
+        "x": 11,
+        "y": 7
+      },
+      "terrain": "forest"
+    },
+    {
+      "position": {
+        "x": 11,
+        "y": 2
+      },
+      "terrain": "hill"
+    },
+    {
+      "position": {
+        "x": 10,
+        "y": 3
+      },
+      "terrain": "hill"
+    },
+    {
+      "position": {
+        "x": 11,
+        "y": 3
+      },
+      "terrain": "hill"
+    },
+    {
+      "position": {
+        "x": 4,
+        "y": 2
+      },
+      "terrain": "forest"
+    },
+    {
+      "position": {
+        "x": 4,
+        "y": 3
+      },
+      "terrain": "forest"
+    },
+    {
+      "position": {
+        "x": 5,
+        "y": 3
+      },
+      "terrain": "forest"
+    }
+  ],
+  "deployment_zones": [
+    {
+      "army": "A",
+      "min_x": 0,
+      "max_x": 15,
+      "min_y": 8,
+      "max_y": 9
+    },
+    {
+      "army": "B",
+      "min_x": 0,
+      "max_x": 15,
+      "min_y": 0,
+      "max_y": 1
+    }
+  ],
+  "units": [
+    {
+      "id": "A-LH1",
+      "army": "A",
+      "name": "Tarantine Horse I",
+      "kind": "light_horse",
+      "position": {
+        "x": 2,
+        "y": 8
+      },
+      "facing": "N",
+      "quality": "ordinary"
+    },
+    {
+      "id": "A-EL1",
+      "army": "A",
+      "name": "War Elephants I",
+      "kind": "elephants",
+      "position": {
+        "x": 3,
+        "y": 8
+      },
+      "facing": "N",
+      "quality": "ordinary"
+    },
+    {
+      "id": "A-PS1",
+      "army": "A",
+      "name": "Psiloi I",
+      "kind": "psiloi",
+      "position": {
+        "x": 4,
+        "y": 8
+      },
+      "facing": "N",
+      "quality": "ordinary"
+    },
+    {
+      "id": "A-SP1",
+      "army": "A",
+      "name": "Thureophoroi I",
+      "kind": "spear",
+      "position": {
+        "x": 5,
+        "y": 8
+      },
+      "facing": "N",
+      "quality": "ordinary"
+    },
+    {
+      "id": "A-PK1",
+      "army": "A",
+      "name": "Phalangites I",
+      "kind": "pike",
+      "position": {
+        "x": 6,
+        "y": 8
+      },
+      "facing": "N",
+      "quality": "ordinary"
+    },
+    {
+      "id": "A-PK2",
+      "army": "A",
+      "name": "Phalangites II",
+      "kind": "pike",
+      "position": {
+        "x": 7,
+        "y": 8
+      },
+      "facing": "N",
+      "quality": "ordinary"
+    },
+    {
+      "id": "A-PK3",
+      "army": "A",
+      "name": "Phalangites III",
+      "kind": "pike",
+      "position": {
+        "x": 8,
+        "y": 8
+      },
+      "facing": "N",
+      "quality": "ordinary"
+    },
+    {
+      "id": "A-PK4",
+      "army": "A",
+      "name": "Phalangites IV",
+      "kind": "pike",
+      "position": {
+        "x": 9,
+        "y": 8
+      },
+      "facing": "N",
+      "quality": "ordinary"
+    },
+    {
+      "id": "A-SP2",
+      "army": "A",
+      "name": "Thureophoroi II",
+      "kind": "spear",
+      "position": {
+        "x": 10,
+        "y": 8
+      },
+      "facing": "N",
+      "quality": "ordinary"
+    },
+    {
+      "id": "A-PS2",
+      "army": "A",
+      "name": "Psiloi II",
+      "kind": "psiloi",
+      "position": {
+        "x": 11,
+        "y": 8
+      },
+      "facing": "N",
+      "quality": "ordinary"
+    },
+    {
+      "id": "A-CV1",
+      "army": "A",
+      "name": "Companion Cavalry I",
+      "kind": "cavalry",
+      "position": {
+        "x": 3,
+        "y": 9
+      },
+      "facing": "N",
+      "quality": "ordinary"
+    },
+    {
+      "id": "A-GEN",
+      "army": "A",
+      "name": "Companion Cavalry General",
+      "kind": "cavalry",
+      "leader": true,
+      "position": {
+        "x": 12,
+        "y": 9
+      },
+      "facing": "N",
+      "quality": "superior"
+    },
+    {
+      "id": "B-LH1",
+      "army": "B",
+      "name": "Tarantine Horse I",
+      "kind": "light_horse",
+      "position": {
+        "x": 13,
+        "y": 1
+      },
+      "facing": "S",
+      "quality": "ordinary"
+    },
+    {
+      "id": "B-EL1",
+      "army": "B",
+      "name": "War Elephants I",
+      "kind": "elephants",
+      "position": {
+        "x": 12,
+        "y": 1
+      },
+      "facing": "S",
+      "quality": "ordinary"
+    },
+    {
+      "id": "B-PS1",
+      "army": "B",
+      "name": "Psiloi I",
+      "kind": "psiloi",
+      "position": {
+        "x": 11,
+        "y": 1
+      },
+      "facing": "S",
+      "quality": "ordinary"
+    },
+    {
+      "id": "B-SP1",
+      "army": "B",
+      "name": "Thureophoroi I",
+      "kind": "spear",
+      "position": {
+        "x": 10,
+        "y": 1
+      },
+      "facing": "S",
+      "quality": "ordinary"
+    },
+    {
+      "id": "B-PK1",
+      "army": "B",
+      "name": "Phalangites I",
+      "kind": "pike",
+      "position": {
+        "x": 9,
+        "y": 1
+      },
+      "facing": "S",
+      "quality": "ordinary"
+    },
+    {
+      "id": "B-PK2",
+      "army": "B",
+      "name": "Phalangites II",
+      "kind": "pike",
+      "position": {
+        "x": 8,
+        "y": 1
+      },
+      "facing": "S",
+      "quality": "ordinary"
+    },
+    {
+      "id": "B-PK3",
+      "army": "B",
+      "name": "Phalangites III",
+      "kind": "pike",
+      "position": {
+        "x": 7,
+        "y": 1
+      },
+      "facing": "S",
+      "quality": "ordinary"
+    },
+    {
+      "id": "B-PK4",
+      "army": "B",
+      "name": "Phalangites IV",
+      "kind": "pike",
+      "position": {
+        "x": 6,
+        "y": 1
+      },
+      "facing": "S",
+      "quality": "ordinary"
+    },
+    {
+      "id": "B-SP2",
+      "army": "B",
+      "name": "Thureophoroi II",
+      "kind": "spear",
+      "position": {
+        "x": 5,
+        "y": 1
+      },
+      "facing": "S",
+      "quality": "ordinary"
+    },
+    {
+      "id": "B-PS2",
+      "army": "B",
+      "name": "Psiloi II",
+      "kind": "psiloi",
+      "position": {
+        "x": 4,
+        "y": 1
+      },
+      "facing": "S",
+      "quality": "ordinary"
+    },
+    {
+      "id": "B-CV1",
+      "army": "B",
+      "name": "Companion Cavalry I",
+      "kind": "cavalry",
+      "position": {
+        "x": 12,
+        "y": 0
+      },
+      "facing": "S",
+      "quality": "ordinary"
+    },
+    {
+      "id": "B-GEN",
+      "army": "B",
+      "name": "Companion Cavalry General",
+      "kind": "cavalry",
+      "leader": true,
+      "position": {
+        "x": 3,
+        "y": 0
+      },
+      "facing": "S",
+      "quality": "superior"
+    }
+  ]
+}
